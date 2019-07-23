@@ -1,11 +1,11 @@
-/* body {
+ body {
   width: 550px;
   margin: auto;
-} */
+} 
 
-/* .content {
+.content {
   margin: auto;
-} */
+} 
 
 .banner {
   text-align: center;
@@ -41,6 +41,6 @@ h1 {
   padding-bottom: 5px;
   padding-left: 5px;
   font-size: 15px;
-  display: none;
+  display: block;
 }
     
