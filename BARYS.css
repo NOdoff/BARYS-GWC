@@ -32,8 +32,7 @@ h1 {
   left: 0px;
   background-color: white;
   padding: 5px;
-  border-right: solid;
-  border-width: 3px;
+  border-right: 2px solid;
   border-color: black;
 }
 
