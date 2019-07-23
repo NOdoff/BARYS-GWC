@@ -33,9 +33,9 @@ h1 {
   background-color: white;
   padding: 5px;
   border-right: solid black 2px;
-  border-left: solid white 2px;
-  border-top: solid white 2px;
-  border-bottom: solid white 2px;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
 }
 
 .sideBarRow {
