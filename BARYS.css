@@ -32,8 +32,10 @@ h1 {
   left: 0px;
   background-color: white;
   padding: 5px;
-  border-right: 2px solid;
-  border-color: black;
+  border-right: solid black 2px;
+  border-left: solid white 2px;
+  border-top: solid white 2px;
+  border-bottom: solid white 2px;
 }
 
 .sideBarRow {
