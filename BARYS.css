@@ -3,8 +3,42 @@ body {
   margin: auto;
 }
 
+.content {
+  margin: auto;
+}
+
+.banner {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 100px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: white;
+}
+  
+
 h1 {
   width: 100px;
   margin: auto;
 }
+
+.sideBar {
+  position: fixed;
+  width 150px:
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: white;
+  padding: 
+}
+
+.sideBarRow {
+  position: fixed;
+  text-align: center;
+  padding-top: 5px;
+  width: 100px;
+  font-size: 15px;
+  
     
