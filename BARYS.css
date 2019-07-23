@@ -31,7 +31,8 @@ h1 {
   bottom: 0px;
   left: 0px;
   background-color: white;
-  padding: 
+  padding: 5px;
+  border-color: black;
 }
 
 .sideBarRow {
