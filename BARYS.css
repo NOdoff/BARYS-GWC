@@ -83,3 +83,7 @@ html {
     display:block;
     z-index:999;
 }
+
+a {
+ text-decoration: none;
+}
