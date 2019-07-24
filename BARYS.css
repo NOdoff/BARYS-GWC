@@ -6,8 +6,28 @@
 .content {
   margin: auto;
 } 
+.section {
+ height: 100vh;
+ min-height: 500px;
+}
 
-.banner {
+.sectionContent {
+ width: 500px;
+ margin: auto;
+ padding-top: 50%;
+ transform: translateY(-50%);
+ 
+}
+
+.sectionContent > p {
+ text-align: center; 
+}
+
+.sectionContent > h1 {
+ text-align: center;
+}
+ 
+ /*.banner {
   
   padding-top: 5px;
   padding-bottom: 5px;
@@ -29,7 +49,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+}*/
 
 h1 {
  margin-top: 50px; 
