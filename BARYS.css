@@ -15,7 +15,7 @@
   top: 0px;
   left: 0px;
   right: 0px;
-  background-color: white;
+  background-color: black;
 }
   
 
@@ -52,7 +52,6 @@ p {
 #indexhome {
  color: #DAC33E;
  font-family: sans-serif;
- border: 2px solid white;
 }
 
 #logoBlock {
