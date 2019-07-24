@@ -86,7 +86,7 @@ html {
  .thumbnail:hover {
      width:125px;
      height:auto;
-     display:block;
+     display:table;
      z-index:999;
      cursor: pointer;
      -webkit-transition-property: all;
