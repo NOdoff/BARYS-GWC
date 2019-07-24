@@ -43,8 +43,6 @@ h1 {
   margin-top: 65px;
 }
 
-
-
 p {
  font-size: 28;
  font-family: sans-serif;
@@ -54,10 +52,7 @@ p {
 #indexhome {
  color: #DAC33E;
  font-family: sans-serif;
-}
-
-#logoBlock {
- border-bottom: white;
+ border: 2px solid white;
 }
 
 #indexscifi {
@@ -85,6 +80,7 @@ html {
     position:relative;
     margin: auto;
  }
+
  .thumbnail:hover {
      width:125px;
      height:auto;
