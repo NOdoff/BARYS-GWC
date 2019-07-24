@@ -69,3 +69,7 @@ p {
  color: #FFBDF5;
  font-family: sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
