@@ -50,17 +50,21 @@ p {
 }
   
 #indexhome {
- font-color: #DAC33E;
+ color: #DAC33E;
+ font-family: sans-serif;
 }
 
 #indexscifi {
- font-color: #67D066;
+ color: #67D066;
+ font-family: sans-serif;
 }
 
 #indexfantasy {
- font-color: #CC91E7;
+ color: #CC91E7;
+ font-family: sans-serif;
 }
 
 #indexromance {
- font-color: #FFBDF5;
+ color: #FFBDF5;
+ font-family: sans-serif;
 }
