@@ -16,9 +16,7 @@
   left: 0px;
   right: 0px;
   background-color: black;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  margin: 7px auto;
   position: relative;
 }
  
