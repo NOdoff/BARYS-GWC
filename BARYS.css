@@ -76,9 +76,10 @@ html {
 
 .thumbnail:hover {
     position:relative;
+    transition: transform .2s;
     top:-25px;
     left:-35px;
-    width:500px;
+    width:125px;
     height:auto;
     display:block;
     z-index:999;
