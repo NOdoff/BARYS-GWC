@@ -47,6 +47,20 @@ h1 {
 p {
  font-size: 28;
  font-family: sans-serif;
- margin-bottom: 300px;
 }
-    
+  
+#indexhome {
+ font-color: #DAC33E;
+}
+
+#indexscifi {
+ font-color: #67D066;
+}
+
+#indexfantasy {
+ font-color: #CC91E7;
+}
+
+#indexromance {
+ font-color: #FFBDF5;
+}
