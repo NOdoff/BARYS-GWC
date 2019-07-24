@@ -55,6 +55,11 @@ p {
  border: 2px solid white;
 }
 
+#logoBlock {
+  padding-bottom: 20px;
+  border-bottom: 2px solid white;
+}
+
 #indexscifi {
  color: #67D066;
  font-family: sans-serif;
