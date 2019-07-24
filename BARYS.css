@@ -60,6 +60,7 @@ p {
 }
 
 #indexscifi {
+ margin-top: 0px
  color: #67D066;
  font-family: sans-serif;
 }
@@ -82,11 +83,11 @@ html {
     width: 100px;
     height: auto;
     position:relative;
+    margin: auto;
  }
  .thumbnail:hover {
      width:125px;
      height:auto;
-     display:table;
      z-index:999;
      cursor: pointer;
      -webkit-transition-property: all;
