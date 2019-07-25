@@ -154,3 +154,8 @@ a {
 #Romance{
   background-image: url("romanceBackground4.png");
 }
+
+#my_iframe {
+ margin-left: auto;
+ margin-right: auto;
+}
