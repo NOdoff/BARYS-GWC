@@ -186,3 +186,8 @@ a {
 h2 {
  text-align: center;
 }
+
+#my_frame {
+ position: absolute;
+ left: 50%;
+}
