@@ -141,14 +141,14 @@ a {
  margin-top: 0px;
 }
 #Home{
- background-image: url("homeBackground.png")
+ background-image: url("homeBackground.png");
 }
 #Sci-fi{
-  background-color: 	#FFFFFF
+  background-image: url("scifiBackground.png");
 }
 #Fantasy{
-   background-color: #FFFFFF
+   background-image: url("fantasyBackground.png");
 }
 #Romance{
-  background-color: #FFFFFF
+  background-color: url("romanceBackground.png");
 }
