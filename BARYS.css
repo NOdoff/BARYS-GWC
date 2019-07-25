@@ -166,3 +166,19 @@ a {
  left: 43%;
  top: -5%;
 }
+
+.sci-fiSection {
+ width: 800px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+
+.sci-fiSection > p {
+ text-align: center; 
+}
+
+.sci-fiSection > h1 {
+ text-align: center;
+}
