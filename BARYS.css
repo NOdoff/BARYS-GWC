@@ -83,13 +83,13 @@ h1 {
 
 p {
  font-size: 28;
- font-family: sans-serif;
+ font-family: "Didact Gothic";
  margin-bottom: 400 px;
 }
   
 #indexhome {
  color: #DAC33E;
- font-family: sans-serif;
+ font-family: "Didact Gothic";
 }
 
 #logoBlock {
@@ -100,17 +100,17 @@ p {
 
 #indexscifi {
  color: #67D066;
- font-family: sans-serif;
+ font-family: "Didact Gothic";
 }
 
 #indexfantasy {
  color: #744BE9;
- font-family: sans-serif;
+ font-family: "Didact Gothic";
 }
 
 #indexromance {
  color: #FFBDF5;
- font-family: sans-serif;
+ font-family: "Didact Gothic";
 }
 
 html {
