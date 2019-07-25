@@ -162,6 +162,7 @@ a {
 } 
 
 #sci-fiHeading {
- margin: auto;
+ position: absolute;
+ left: 45%;
 }
 
