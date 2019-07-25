@@ -167,7 +167,7 @@ a {
  top: -20%;
 }
 
-.sci-fiSection {
+.sci-fiSectionContent {
  width: 800px;
  position: absolute;
  top: 50%;
@@ -175,10 +175,10 @@ a {
  transform: translate(-50%, -50%);
 }
 
-.sci-fiSection > p {
+.sci-fiSectionContent > p {
  text-align: center; 
 }
 
-.sci-fiSection > h1 {
+.sci-fiSectionContent > h1 {
  text-align: center;
 }
