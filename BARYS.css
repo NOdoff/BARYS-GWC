@@ -183,5 +183,6 @@ a {
   background-image: url("romanceBackground4.png");
 }
 
-#sci-fiHeading {
- background-image: 
+h2 {
+ text-align: center;
+}
