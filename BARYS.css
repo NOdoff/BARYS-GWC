@@ -7,10 +7,22 @@
 .content {
   margin-left: 200px;
 } 
+
+.sci-fiContent {
+  margin-left: 200px;
+} 
+
 .section {
  height: 100vh;
  min-height: 500px;
  
+ position: relative;
+ width: 100%;
+}
+
+.sci-fiSection {
+ height: 100vh;
+ min-height: 500px;
  
  position: relative;
  width: 100%;
@@ -30,6 +42,22 @@
 }
 
 .sectionContent > h1 {
+ text-align: center;
+}
+
+.sci-fiSectionContent {
+ width: 800px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+
+.sci-fiSectionContent > p {
+ text-align: center; 
+}
+
+.sci-fiSectionContent > h1 {
  text-align: center;
 }
  
@@ -162,22 +190,4 @@ a {
 } 
 
 #sci-fiHeading {
- position: absolute;
- left: 42.8%;
-}
-
-.sci-fiSectionContent {
- width: 800px;
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
-}
-
-.sci-fiSectionContent > p {
- text-align: center; 
-}
-
-.sci-fiSectionContent > h1 {
- text-align: center;
-}
+ background-image: 
