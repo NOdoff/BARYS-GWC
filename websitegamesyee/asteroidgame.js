@@ -40,20 +40,20 @@ astroidsImage = loadImage('https://i.imgur.com/s18v4Ay.png');
 //   }
 
   //
-  newGame();
+//   newGame();
   var gameStart = true;
   gameOver = false;
   updateSprites(false);
  
-//   background("#000000");
-//    fill("#ffffff");
-//    textAlign(CENTER);
+   background("#000000");
+    fill("#ffffff");
+   textAlign(CENTER);
    
-//    text('Press "c" to play game!', width/3, 20);
+   text('Press "c" to play game!', width/3, 20);
 //   spaceship.remove();
 //   for(var i = 0; i<astroids.length; i++) {
 //     astroids[i].remove();
-//   }
+//    }
   //
   //camera.position.y = height/2;
 
@@ -77,9 +77,9 @@ function draw() {
 //   for(var i = 0; i<astroids.length; i++) {
 //     astroids[i].remove();
 //   }
-//    if (keyWentDown('c')){
-//      newGame(); 
-//    }
+    if (keyWentDown('c')){
+      newGame(); 
+    }
   
    background("#003366");
    fill("#ffffff");
