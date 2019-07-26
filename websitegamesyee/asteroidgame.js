@@ -6,13 +6,14 @@ var SCORE = 0;
 var gameOver;
 var UP = 15;
 var DOWN = 15;
+var GameStart;
 
 
 function setup() {
   createCanvas(800, 600);
 
 
-
+GameStart = false
 
   spaceshipImage = loadImage('https://i.imgur.com/hNCQhFo.png');
 astroidsImage = loadImage('https://i.imgur.com/s18v4Ay.png');
@@ -77,8 +78,23 @@ function draw() {
 //   for(var i = 0; i<astroids.length; i++) {
 //     astroids[i].remove();
 //   }
-    if (keyWentDown('c')){
+ 
+//   background("#000000");
+//     fill("#ffffff");
+//    textAlign(CENTER);
+   
+//    text('Press "c" to play game!', width/3, 20);
+    
+ if (keyWentDown('c')){
       newGame(); 
+    GameStart = true
+    }
+    if (!GameStart) {
+     background("#000000");
+     fill("#ffffff");
+     textAlign(CENTER);
+     text('Press "c" to play game!', width/3, 20);
+     return;
     }
   
    background("#003366");
