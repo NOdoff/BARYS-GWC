@@ -74,8 +74,8 @@ function draw() {
    background("#000000");
    fill("#ffffff");
    textAlign(CENTER);
-   text('GAME OVER', width/30, 20 );
-   text(' Press "c" to try again', width/3, 30);
+   text('GAME OVER', width/10, 20 );
+   text(' Press "c" to try again', width/3, 20);
    if (keyWentDown('c')){
      newGame();
   }
