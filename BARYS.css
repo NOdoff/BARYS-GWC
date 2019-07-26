@@ -255,8 +255,8 @@ button{
   outline:none;
 }
 button:hover{
-  background:inherit;
-  color:#fff;
+  background: #fff;
+  color:#1AAB8A;
 }
 button:before,button:after{
   content:'';
