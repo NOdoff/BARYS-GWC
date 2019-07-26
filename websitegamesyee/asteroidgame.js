@@ -64,7 +64,8 @@ function draw() {
    
    text('Press "c" to play game!', width/3, 20);
    if (keyWentDown('c')){
-     newGame();
+     newGame(); 
+   }
   
 //   background("#003366");
 //   fill("#ffffff");
