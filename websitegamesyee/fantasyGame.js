@@ -54,7 +54,7 @@ function draw() {
   }
 
   if(!gameOver) {
-    if (unicorn.position.y < 590 && unicorn.position.y > 10) {
+    if (unicorn.position.y < 540 && unicorn.position.y > 10) {
     if(keyDown(38)) {
       unicorn.position.y -= UP;
 
@@ -69,9 +69,9 @@ function draw() {
     }
 
   }
-  else if (unicorn.position.y >= 560) {
+  else if (unicorn.position.y >= 540) {
     if(keyDown(38)) {
-      unicorn.position.y = 560;
+      unicorn.position.y = 540;
 
 
     } else if(keyDown(40)) {
@@ -80,13 +80,13 @@ function draw() {
     }
   }
 
-  else if (unicorn.position.y <= 40) {
+  else if (unicorn.position.y <= 100) {
     if(keyDown(38)) {
       unicorn.position.y += DOWN;
 
 
     } else if(keyDown(40)) {
-      unicorn.position.y = 40;
+      unicorn.position.y = 100;
 
     }
   }
