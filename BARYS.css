@@ -195,7 +195,7 @@ h2 {
 
 a:link#enterbutton {
  position: absolute;
- top: 103%;
+ top: 95%;
  left:45%;
  text-decoration: none;
  color: black;
@@ -206,12 +206,12 @@ a:link#enterbutton {
  border-right: 1px solid #333333;
  border-bottom: 1px solid #333333;
  border-left: 1px solid #CCCCCC;
- border-radius: 10px;
+ border-radius: 5px;
 }
 
 a:hover#enterbutton {
  position: absolute;
- top: 103%;
+ top: 95%;
  left:45%;
  text-decoration: none;
  color: white;
@@ -222,6 +222,6 @@ a:hover#enterbutton {
  border-right: 1px solid #333333;
  border-bottom: 1px solid #333333;
  border-left: 1px solid #CCCCCC;
- border-radius: 10px;
+ border-radius: 5px;
 }
  
