@@ -196,9 +196,10 @@ h2 {
 a:link#enterbutton {
  position: absolute;
  top: 103%;
- left:40%;
+ left:45%;
  text-decoration: none;
  color: darkgreen;
+ font-size: 25;
  background-color: inherit;
  padding: 2px 6px 2px 6px;
  border-top: 1px solid #CCCCCC;
@@ -210,9 +211,10 @@ a:link#enterbutton {
 a:hover#enterbutton {
  position: absolute;
  top: 103%;
- left:40%;
+ left:45%;
  text-decoration: none;
  color: white;
+ font-size: 25px;
  background-color: black;
  padding: 2px 6px 2px 6px;
  border-top: 1px solid #CCCCCC;
