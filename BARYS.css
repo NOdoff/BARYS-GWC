@@ -256,7 +256,7 @@ button{
 }
 button:hover{
   background:inherit;
-  color:#1AAB8A;
+  color:#fff;
 }
 button:before,button:after{
   content:'';
