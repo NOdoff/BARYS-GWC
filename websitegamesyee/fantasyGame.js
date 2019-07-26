@@ -7,8 +7,17 @@ var gameOver;
 var UP = 15;
 var DOWN = 15;
 
+var unicorn;
+var astroid;
+var unicornImage, fireballImage;
+
+var SCORE = 0;
+var gameOver;
+var UP = 15;
+var DOWN = 15;
+
 function setup() {
-  createCanvas(1200, 600);
+  createCanvas(800, 600);
 
 unicornImage = loadImage('https://i.imgur.com/RoGsgTC.png');
 fireballImage = loadImage('https://i.imgur.com/37bnkYA.png');
@@ -83,7 +92,7 @@ function draw() {
       score();
       for(var i = 0; i<fireball.length; i++) {
        if(unicorn.overlap(fireball[i])) {
-     fireball[i].position.x = 1260;
+     fireball[i].position.x = 760;
       fireball[i].position.y = random(0, 600);
        }
       }
@@ -96,7 +105,7 @@ function draw() {
 
    for(var i = 0; i<fireball.length; i++) {
      if(fireball[i].position.x < -30){
-       fireball[i].position.x = 1260;
+       fireball[i].position.x = 760;
       fireball[i].position.y = random(0, 600);
      }
    }
@@ -118,7 +127,7 @@ function newGame() {
   SCORE = 0
   for (var i = 0; i < 5; i++) {
     let astroidH = random(0, 600);
-  let astroidX = random(600, 1200);
+  let astroidX = random(600, 800);
 
     astroid = createSprite(astroidX, astroidH, 75, 75);
 
