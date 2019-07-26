@@ -75,7 +75,7 @@ function draw() {
    fill("#ffffff");
    textAlign(CENTER);
    text('GAME OVER', width/10, 20 );
-   text(' Press "c" to try again', width/3, 20);
+   text('Press "c" to try again', width/3, 20);
    if (keyWentDown('c')){
      newGame();
   }
@@ -230,7 +230,7 @@ function newGame() {
   background("#003366");
   fill("#ffffff");
   textAlign(CENTER);
-  text('Controls: Up and Down Arrow Keys', width/3, 20);
+  text('Controls: w for up, s for down.', width/3, 20);
   text('Asteroids Hit: ' + SCORE, width/10, 20 );
 
 
