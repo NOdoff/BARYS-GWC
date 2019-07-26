@@ -200,8 +200,12 @@ a:link#enterbutton {
  text-decoration: none;
  color: black;
  font-size: 25px;
- background-color: #67D066;
+ background-color: inherit;
  padding: 2px 6px 2px 6px;
+ border-top: 1px solid #CCCCCC;
+ border-right: 1px solid #333333;
+ border-bottom: 1px solid #333333;
+ border-left: 1px solid #CCCCCC;
 }
 
 a:hover#enterbutton {
@@ -209,7 +213,7 @@ a:hover#enterbutton {
  top: 103%;
  left:45%;
  text-decoration: none;
- color: #67D066;
+ color: white;
  font-size: 25px;
  background-color: black;
  padding: 2px 6px 2px 6px;
