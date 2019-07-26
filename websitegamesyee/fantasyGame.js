@@ -1,6 +1,6 @@
-var spaceship;
+var unicorn;
  var astroid;
-var spaceshipImage, astroidsImage;
+var unicornImage, fireballImage;
 
 var SCORE = 0;
 var gameOver;
@@ -13,12 +13,12 @@ function setup() {
 
 
   unicornImage = loadImage('https://i.imgur.com/RoGsgTC.png');
-astroidsImage = loadImage('https://i.imgur.com/s18v4Ay.png');
+fireballImage = loadImage('https://i.imgur.com/37bnkYA.png');
 
-   spaceship = createSprite(width/5, height/2, 40, 40);
-  spaceship.addImage(spaceshipImage);
- 
-   astroids = new Group();
+   unicorn = createSprite(width/5, height/2, 40, 40);
+  unicorn.addImage(unicornImage);
+
+   fireball = new Group();
 
 
   newGame();
@@ -29,23 +29,23 @@ astroidsImage = loadImage('https://i.imgur.com/s18v4Ay.png');
 }
 
 function draw() {
-  background("#003366");
-  fill("#ffffff");
+  background("#BDF3F1");
+  fill("#000000");
   textAlign(CENTER);
   text('Controls: Up and Down Arrow Keys', width/3, 20);
-  text('Asteroids Hit: ' + SCORE, width/10, 20 );
+  text('fireballs Hit: ' + SCORE, width/10, 20 );
 
 
   if(gameOver) {
-  spaceship.remove();
-  for(var i = 0; i<astroids.length; i++) {
-    astroids[i].remove();
+  unicorn.remove();
+  for(var i = 0; i<fireball.length; i++) {
+    fireball[i].remove();
 
     }
    background("#000000");
    fill("#ffffff");
    textAlign(CENTER);
-   text('GAME OVER', width/30, 30 );
+   text('GAME OVER', width/30, 20 );
    text(' Press "c" to try again', width/3, 30);
    if (keyWentDown('c')){
      newGame();
@@ -54,50 +54,50 @@ function draw() {
   }
 
   if(!gameOver) {
-    if (spaceship.position.y < 590 && spaceship.position.y > 10) {
+    if (unicorn.position.y < 590 && unicorn.position.y > 10) {
     if(keyDown(38)) {
-      spaceship.position.y -= UP;
+      unicorn.position.y -= UP;
 
 
     } else if(keyDown(40)) {
-      spaceship.position.y += DOWN;
+      unicorn.position.y += DOWN;
 
     } else {
-      spaceship.position.y += 0;
+      unicorn.position.y += 0;
 
 
     }
 
   }
-  else if (spaceship.position.y >= 560) {
+  else if (unicorn.position.y >= 560) {
     if(keyDown(38)) {
-      spaceship.position.y = 560;
+      unicorn.position.y = 560;
 
 
     } else if(keyDown(40)) {
-      spaceship.position.y -= UP;
+      unicorn.position.y -= UP;
 
     }
   }
 
-  else if (spaceship.position.y <= 40) {
+  else if (unicorn.position.y <= 40) {
     if(keyDown(38)) {
-      spaceship.position.y += DOWN;
+      unicorn.position.y += DOWN;
 
 
     } else if(keyDown(40)) {
-      spaceship.position.y = 40;
+      unicorn.position.y = 40;
 
     }
   }
 
- 
-   if (spaceship.overlap(astroids)) {
+
+   if (unicorn.overlap(fireball)) {
       score();
-      for(var i = 0; i<astroids.length; i++) {
-       if(spaceship.overlap(astroids[i])) {
-     astroids[i].position.x = 1260;
-      astroids[i].position.y = random(0, 600);
+      for(var i = 0; i<fireball.length; i++) {
+       if(unicorn.overlap(fireball[i])) {
+     fireball[i].position.x = 1260;
+      fireball[i].position.y = random(0, 600);
 
        }
       }
@@ -109,19 +109,19 @@ function draw() {
   }
 
 
-  
 
-   for(var i = 0; i<astroids.length; i++) {
-     if(astroids[i].position.x < -30){
-       astroids[i].position.x = 1260;
-      astroids[i].position.y = random(0, 600);
+
+   for(var i = 0; i<fireball.length; i++) {
+     if(fireball[i].position.x < -30){
+       fireball[i].position.x = 1260;
+      fireball[i].position.y = random(0, 600);
 
      }
    }
 
- drawSprite(spaceship);
- //drawSprites(astroids);
-  astroids.draw();
+ drawSprite(unicorn);
+ //drawSprites(fireball);
+  fireball.draw();
 
 }
 
@@ -130,40 +130,40 @@ function score() {
 }
 
 function newGame() {
-  astroids.removeSprites();
+  fireball.removeSprites();
   gameOver = false;
   updateSprites(true);
-  spaceship.position.x = width/5;
-  spaceship.position.y = height/2;
+  unicorn.position.x = width/5;
+  unicorn.position.y = height/2;
   SCORE = 0
-  for (var i = 0; i < 7; i++) {
+  for (var i = 0; i < 5; i++) {
     let astroidH = random(0, 600);
   let astroidX = random(600, 1200);
 
     astroid = createSprite(astroidX, astroidH, 75, 75);
 
-  astroid.addImage(astroidsImage);
+  astroid.addImage(fireballImage);
    astroid.velocity.x = random(-3, -6);
-  astroids.add(astroid);
+  fireball.add(astroid);
   }
-  spaceship = createSprite(width/5, height/2, 40, 40);
-  spaceship.addImage(spaceshipImage);
-   drawSprite(spaceship);
+  unicorn = createSprite(width/5, height/2, 40, 40);
+  unicorn.addImage(unicornImage);
+   drawSprite(unicorn);
 
   background("#003366");
   fill("#ffffff");
   textAlign(CENTER);
   text('Controls: Up and Down Arrow Keys', width/3, 20);
-  text('Asteroids Hit: ' + SCORE, width/10, 20 );
+  text('fireballs Hit: ' + SCORE, width/10, 20 );
 
 }
 
 function disappear() {
-  for(var i = 0; i<astroids.length; i++) {
-        if(spaceship.overlap(astroids[i])){
+  for(var i = 0; i<fireball.length; i++) {
+        if(unicorn.overlap(fireball[i])){
 
 
-         astroids[i].remove();
+         fireball[i].remove();
         }
    }
 }
