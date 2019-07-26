@@ -9,7 +9,7 @@ var DOWN = 15;
 
 
 function setup() {
-  createCanvas(1200, 600);
+  createCanvas(800, 600);
 
 
 
@@ -125,7 +125,7 @@ function draw() {
       score();
       for(var i = 0; i<astroids.length; i++) {
        if(spaceship.overlap(astroids[i])) {
-     astroids[i].position.x = 1260;
+     astroids[i].position.x = 840;
       astroids[i].position.y = random(0, 600);
 //    disappear();
        }
@@ -142,7 +142,7 @@ function draw() {
 
    for(var i = 0; i<astroids.length; i++) {
      if(astroids[i].position.x < -30){
-       astroids[i].position.x = 1260;
+       astroids[i].position.x = 860;
       astroids[i].position.y = random(0, 600);
 
      }
@@ -213,7 +213,7 @@ function newGame() {
   SCORE = 0
   for (var i = 0; i < 7; i++) {
     let astroidH = random(0, 600);
-  let astroidX = random(600, 1200);
+  let astroidX = random(800, 400);
 
     astroid = createSprite(astroidX, astroidH, 75, 75);
 
