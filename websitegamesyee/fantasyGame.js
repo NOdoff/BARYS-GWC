@@ -133,7 +133,7 @@ function newGame() {
   background("#003366");
   fill("#ffffff");
   textAlign(CENTER);
-  text('Controls: Up and Down Arrow Keys', width/3, 20);
+  text('Controls: W (up) and S (down) Keys', width/3, 20);
   text('fireballs Hit: ' + SCORE, width/10, 20 );
 }
 
