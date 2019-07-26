@@ -277,3 +277,15 @@ button:hover:before,button:hover:after{
  top: 100%;
  left: 39%;
 }
+
+#sci-fiHeading {
+ background-color: lightgreen;
+}
+
+#subgenreSummaries {
+ background-color: green;
+}
+
+sci-fiTwineGame {
+ background-color: darkgreen;
+}
