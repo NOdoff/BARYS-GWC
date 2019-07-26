@@ -193,10 +193,9 @@ h2 {
  top: 11%;
 }
 
-#enterbutton {
+a:link#enterbutton {
  text-decoration: none;
  color: darkgreen;
- border-color: black;
- border-width: 3px;
+ background-color: inherit;
 }
  
