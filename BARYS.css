@@ -286,7 +286,7 @@ button:hover:before,button:hover:after{
 }
 
 #sci-fiHeading {
- background-image: url("Sci-fiBackground.jpg"), linear-gradient(rgba(151, 223, 150, 1),rgba(151, 223, 150, 1));
+ background-image: url("Sci-fiBackground.jpg"), linear-gradient(rgba(105, 208, 103, 0.66),rgba(105, 208, 103, 0.66));
  background-blend-mode: overlay;
 }
 
