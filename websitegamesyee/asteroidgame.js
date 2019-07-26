@@ -45,15 +45,15 @@ astroidsImage = loadImage('https://i.imgur.com/s18v4Ay.png');
   gameOver = false;
   updateSprites(false);
  
-  background("#000000");
-   fill("#ffffff");
-   textAlign(CENTER);
+//   background("#000000");
+//    fill("#ffffff");
+//    textAlign(CENTER);
    
-   text('Press "c" to play game!', width/3, 20);
-  spaceship.remove();
-  for(var i = 0; i<astroids.length; i++) {
-    astroids[i].remove();
-  }
+//    text('Press "c" to play game!', width/3, 20);
+//   spaceship.remove();
+//   for(var i = 0; i<astroids.length; i++) {
+//     astroids[i].remove();
+//   }
   //
   //camera.position.y = height/2;
 
@@ -77,15 +77,15 @@ function draw() {
 //   for(var i = 0; i<astroids.length; i++) {
 //     astroids[i].remove();
 //   }
-   if (keyWentDown('c')){
-     newGame(); 
-   }
+//    if (keyWentDown('c')){
+//      newGame(); 
+//    }
   
-//   background("#003366");
-//   fill("#ffffff");
-//   textAlign(CENTER);
-//   text('Controls: w for up, s for down.', width/3, 20);
-//   text('Asteroids Hit: ' + SCORE, width/10, 20 );
+   background("#003366");
+   fill("#ffffff");
+  textAlign(CENTER);
+ text('Controls: w for up, s for down.', width/3, 20);
+ text('Asteroids Hit: ' + SCORE, width/10, 20 );
 
 
   if(gameOver) {
@@ -165,7 +165,7 @@ function draw() {
 
    for(var i = 0; i<astroids.length; i++) {
      if(astroids[i].position.x < -30){
-       astroids[i].position.x = 860;
+       astroids[i].position.x = 840;
       astroids[i].position.y = random(0, 600);
 
      }
@@ -250,11 +250,11 @@ function newGame() {
   spaceship.addImage(spaceshipImage);
    drawSprite(spaceship);
 
-  background("#003366");
-  fill("#ffffff");
-  textAlign(CENTER);
-  text('Controls: w for up, s for down.', width/3, 20);
-  text('Asteroids Hit: ' + SCORE, width/10, 20 );
+//   background("#003366");
+//   fill("#ffffff");
+//   textAlign(CENTER);
+//   text('Controls: w for up, s for down.', width/3, 20);
+//   text('Asteroids Hit: ' + SCORE, width/10, 20 );
 
 
 //   astroid.position.x = width/4;
