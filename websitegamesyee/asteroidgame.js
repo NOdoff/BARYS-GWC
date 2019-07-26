@@ -61,7 +61,7 @@ function draw() {
   background("#003366");
   fill("#ffffff");
   textAlign(CENTER);
-  text('Controls: Up and Down Arrow Keys', width/3, 20);
+  text('Controls: w for up, s for down.', width/3, 20);
   text('Asteroids Hit: ' + SCORE, width/10, 20 );
 
 
@@ -84,11 +84,11 @@ function draw() {
 
   if(!gameOver) {
     if (spaceship.position.y < 590 && spaceship.position.y > 10) {
-    if(keyDown(38)) {
+    if(keyDown('w')) {
       spaceship.position.y -= UP;
 
 
-    } else if(keyDown(40)) {
+    } else if(keyDown('s')) {
       spaceship.position.y += DOWN;
 
     } else {
@@ -99,22 +99,22 @@ function draw() {
 
   }
   else if (spaceship.position.y >= 560) {
-    if(keyDown(38)) {
+    if(keyDown('w')) {
       spaceship.position.y = 560;
 
 
-    } else if(keyDown(40)) {
+    } else if(keyDown('s')) {
       spaceship.position.y -= UP;
 
     }
   }
 
   else if (spaceship.position.y <= 40) {
-    if(keyDown(38)) {
+    if(keyDown('w')) {
       spaceship.position.y += DOWN;
 
 
-    } else if(keyDown(40)) {
+    } else if(keyDown('s')) {
       spaceship.position.y = 40;
 
     }
