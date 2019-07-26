@@ -198,14 +198,14 @@ a:link#enterbutton {
  top: 103%;
  left:45%;
  text-decoration: none;
- color: darkgray;
+ color: black;
  font-size: 25px;
  background-color: #67D066;
  padding: 2px 6px 2px 6px;
- border-top: 1px solid #CCCCCC;
- border-right: 1px solid #333333;
- border-bottom: 1px solid #333333;
- border-left: 1px solid #CCCCCC;
+ border-top: 1px solid #67D066;
+ border-right: 1px solid #67D066;
+ border-bottom: 1px solid #67D066;
+ border-left: 1px solid #67D066;
 }
 
 a:hover#enterbutton {
