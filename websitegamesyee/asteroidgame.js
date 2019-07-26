@@ -234,7 +234,7 @@ function newGame() {
   spaceship.position.x = width/5;
   spaceship.position.y = height/2;
   SCORE = 0
-  for (var i = 0; i < 7; i++) {
+  for (var i = 0; i < 5; i++) {
     let astroidH = random(0, 600);
   let astroidX = random(800, 400);
 
