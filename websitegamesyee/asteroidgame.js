@@ -66,6 +66,7 @@ function draw() {
   spaceship.remove();
   for(var i = 0; i<astroids.length; i++) {
     astroids[i].remove();
+  }
    if (keyWentDown('c')){
      newGame(); 
    }
