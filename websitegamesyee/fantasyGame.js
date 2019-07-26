@@ -12,7 +12,7 @@ function setup() {
   createCanvas(1200, 600);
 
 
-  spaceshipImage = loadImage('https://i.imgur.com/hNCQhFo.png');
+  unicornImage = loadImage('https://i.imgur.com/RoGsgTC.png');
 astroidsImage = loadImage('https://i.imgur.com/s18v4Ay.png');
 
    spaceship = createSprite(width/5, height/2, 40, 40);
