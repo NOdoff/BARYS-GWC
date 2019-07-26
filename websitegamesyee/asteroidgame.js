@@ -58,11 +58,19 @@ astroidsImage = loadImage('https://i.imgur.com/s18v4Ay.png');
 }
 
 function draw() {
-  background("#003366");
-  fill("#ffffff");
-  textAlign(CENTER);
-  text('Controls: w for up, s for down.', width/3, 20);
-  text('Asteroids Hit: ' + SCORE, width/10, 20 );
+ background("#000000");
+   fill("#ffffff");
+   textAlign(CENTER);
+   
+   text('Press "c" to play game!', width/3, 20);
+   if (keyWentDown('c')){
+     newGame();
+  
+//   background("#003366");
+//   fill("#ffffff");
+//   textAlign(CENTER);
+//   text('Controls: w for up, s for down.', width/3, 20);
+//   text('Asteroids Hit: ' + SCORE, width/10, 20 );
 
 
   if(gameOver) {
