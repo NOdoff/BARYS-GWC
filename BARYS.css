@@ -195,8 +195,9 @@ h2 {
 
 #game_iframe {
  position: absolute;
- left: 12%;
- top: 11%;
+ left: 3%;
+ top: 22%;
+ 
 }
 
 /*a:link#enterbutton {
