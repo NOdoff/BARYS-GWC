@@ -195,8 +195,8 @@ h2 {
 
 a:link#enterbutton {
  position: absolute;
- top: 20%;
- left:40%
+ top: 103%;
+ left:40%;
  text-decoration: none;
  color: darkgreen;
  background-color: inherit;
@@ -208,6 +208,9 @@ a:link#enterbutton {
 }
 
 a:hover#enterbutton {
+ position: absolute;
+ top: 103%;
+ left:40%;
  text-decoration: none;
  color: white;
  background-color: black;
