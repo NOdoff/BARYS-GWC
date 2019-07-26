@@ -195,8 +195,8 @@ h2 {
 
 #game_iframe {
  position: absolute;
- left: 3%;
- top: 22%;
+ left: 5%;
+ top: 11%;
  
 }
 
@@ -286,7 +286,7 @@ button:hover:before,button:hover:after{
 }
 
 #sci-fiHeading {
- background-image: url("Sci-fiBackground.jpg"), linear-gradient(rgba(105, 208, 103, 0.37),rgba(105, 208, 103, 0.37));
+ background-image: url("Sci-fiBackground.jpg"), linear-gradient(rgba(151, 223, 150, 1),rgba(151, 223, 150, 1));
  background-blend-mode: overlay;
 }
 
