@@ -7,15 +7,6 @@ var gameOver;
 var UP = 15;
 var DOWN = 15;
 
-var unicorn;
-var astroid;
-var unicornImage, fireballImage;
-
-var SCORE = 0;
-var gameOver;
-var UP = 15;
-var DOWN = 15;
-
 function setup() {
   createCanvas(800, 600);
 
@@ -38,7 +29,7 @@ function draw() {
   background("#BDF3F1");
   fill("#000000");
   textAlign(CENTER);
-  text('Controls: Up and Down Arrow Keys', width/3, 20);
+  text('Controls: W (up) and S (down) Keys', width/3, 20);
   text('fireballs Hit: ' + SCORE, width/10, 20 );
 
   if(gameOver) {
@@ -59,10 +50,10 @@ function draw() {
 
   if(!gameOver) {
     if (unicorn.position.y < 540 && unicorn.position.y > 80) {
-    if(keyDown(38)) {
+    if(keyDown('w')) {
       unicorn.position.y -= UP;
     }
-    else if(keyDown(40)) {
+    else if(keyDown('s')) {
       unicorn.position.y += DOWN;
     }
     else {
@@ -71,19 +62,19 @@ function draw() {
 
   }
   else if (unicorn.position.y >= 520) {
-    if(keyDown(38)) {
+    if(keyDown('w')) {
       unicorn.position.y = 520;
     }
-    else if(keyDown(40)) {
+    else if(keyDown('s')) {
       unicorn.position.y -= UP;
     }
   }
 
   else if (unicorn.position.y <= 90) {
-    if(keyDown(38)) {
+    if(keyDown('w')) {
       unicorn.position.y += DOWN;
     }
-    else if(keyDown(40)) {
+    else if(keyDown('s')) {
       unicorn.position.y = 90;
     }
   }
