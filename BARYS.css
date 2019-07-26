@@ -193,6 +193,12 @@ h2 {
  top: 11%;
 }
 
+#game_iframe {
+ position: absolute;
+ left: 12%;
+ top: 11%;
+}
+
 /*a:link#enterbutton {
  position: absolute;
  top: 100%;
@@ -279,7 +285,7 @@ button:hover:before,button:hover:after{
 }
 
 #sci-fiHeading {
- background:linear-gradient(0deg,rgba(103, 208, 102, 1),rgba(103, 208, 102, 1)),url(Sci-fiBackground.jpg);
+ background:linear-gradient(0deg,rgba(103, 208, 102, 1),rgba(103, 208, 102, 1)),url(sci-fi.jpg);
 }
 
 #subgenreSummaries {
