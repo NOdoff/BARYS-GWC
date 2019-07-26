@@ -198,4 +198,10 @@ a:link#enterbutton {
  color: darkgreen;
  background-color: inherit;
 }
+
+a:visited#enterbutton {
+ text-decoration: none;
+ color: darkgreen;
+ background-color: inherit;
+}
  
