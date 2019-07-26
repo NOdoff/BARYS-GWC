@@ -272,3 +272,8 @@ button:hover:before,button:hover:after{
   transition:800ms ease all;
 }
  
+#enterbutton {
+ position: absolute;
+ top: 100%;
+ left: 45%;
+}
