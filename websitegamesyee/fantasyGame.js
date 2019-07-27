@@ -11,8 +11,8 @@ function setup() {
   createCanvas(800, 600);
 GameStart = false
 
-  unicornImage = loadImage('https://i.imgur.com/hNCQhFo.png');
-fireballsImage = loadImage('https://i.imgur.com/rXCTofE.png');
+  unicornImage = loadImage('https://i.imgur.com/quw6xZa.png');
+  fireballsImage = loadImage('https://i.imgur.com/rXCTofE.png');
 
    unicorn = createSprite(width/5, height/2, 40, 40);
   unicorn.addImage(unicornImage);
