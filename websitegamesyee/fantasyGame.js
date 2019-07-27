@@ -39,7 +39,8 @@ function draw() {
      background("#000000");
      fill("#ffffff");
      textAlign(CENTER);
-     text('Press "c" to play game!', width/3, 20);
+     textSize(42);
+     text('Click the game and then press "c" to play!', width/2, height/2);
      return;
     }
 
