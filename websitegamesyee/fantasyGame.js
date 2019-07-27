@@ -1,11 +1,10 @@
 var unicorn;
 var astroid;
 var unicornImage, fireballImage;
-
 var SCORE = 0;
 var gameOver;
-var UP = 15;
-var DOWN = 15;
+var UP = 10;
+var DOWN = 10;
 
 function setup() {
   createCanvas(800, 600);
@@ -17,7 +16,6 @@ unicorn = createSprite(width/5, height/2, 40, 40);
 unicorn.addImage(unicornImage);
 
 fireball = new Group();
-
 
 newGame();
 var gameStart = true;
@@ -49,7 +47,7 @@ function draw() {
   }
 
   if(!gameOver) {
-    if (unicorn.position.y < 540 && unicorn.position.y > 80) {
+    if (unicorn.position.y > 540 && unicorn.position.y < 80) {
     if(keyDown('w')) {
       unicorn.position.y -= UP;
     }
