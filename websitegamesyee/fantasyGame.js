@@ -26,7 +26,7 @@ GameStart = false
     fill("#00fff6");
    textAlign(CENTER);
    textSize(42);
-   text('Click the game and then press "c" to play!', width/2, height/2);
+   text('Click this game and then press "c" to play!', width/2, height/2);
 }
 
 function draw() {
@@ -40,7 +40,7 @@ function draw() {
      fill("#00fff6");
      textAlign(CENTER);
      textSize(42);
-     text('Click the game and then press "c" to play!', width/2, height/2);
+     text('Click this game and then press "c" to play!', width/2, height/2);
      return;
     }
 
