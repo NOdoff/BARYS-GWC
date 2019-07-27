@@ -1,5 +1,5 @@
 var unicorn;
-var fireball;
+ var fireball;
 var unicornImage, fireballsImage;
 var SCORE = 0;
 var gameOver;
@@ -23,7 +23,7 @@ GameStart = false
   gameOver = false;
   updateSprites(false);
    background("#000000");
-    fill("##00fff6");
+    fill("#00fff6");
    textAlign(CENTER);
    textSize(42);
    text('Click the game and then press "c" to play!', width/2, height/2);
@@ -44,7 +44,7 @@ function draw() {
      return;
     }
 
-   background("#003366");
+   background("#BDF3F1");
    fill("#ffffff");
   textAlign(CENTER);
   textSize(16)
@@ -58,7 +58,7 @@ function draw() {
     }
 
    background("#000000");
-   fill("#ffffff");
+   fill("#00fff6");
    textAlign(CENTER);
    textSize(42)
    text('GAME OVER - Press "c" to try again', width/2, height/2);
