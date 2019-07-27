@@ -47,7 +47,7 @@ function draw() {
   }
 
   if(!gameOver) {
-    if (unicorn.position.y > 540 && unicorn.position.y < 80) {
+    if (unicorn.position.y < 540 && unicorn.position.y > 80) {
     if(keyDown('w')) {
       unicorn.position.y -= UP;
     }
