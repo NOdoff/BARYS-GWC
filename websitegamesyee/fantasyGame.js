@@ -8,6 +8,7 @@ var DOWN = 10;
 
 function setup() {
   createCanvas(800, 600);
+  GameStart = false
 
 unicornImage = loadImage('https://i.imgur.com/RoGsgTC.png');
 fireballImage = loadImage('https://i.imgur.com/37bnkYA.png');
@@ -17,11 +18,20 @@ unicorn.addImage(unicornImage);
 
 fireball = new Group();
 
-newGame();
 var gameStart = true;
 gameOver = false;
 updateSprites(false);
+  background("#000000");
+   fill("#00fff6");
+   textAlign(CENTER);
+   textSize(50);
+   text('Press "c" to play the game!', width/2, height/2);
 }
+
+if (keyWentDown('c')){
+      newGame(); 
+    GameStart = true
+    }
 
 function draw() {
   background("#BDF3F1");
