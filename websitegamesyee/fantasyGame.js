@@ -1,74 +1,74 @@
 var unicorn;
-var fireball;
-var unicornImage, fireballImage;
+ var fireball;
+var unicornImage, fireballsImage;
 var SCORE = 0;
 var gameOver;
-var UP = 10;
-var DOWN = 10;
+var UP = 15;
+var DOWN = 15;
 var GameStart;
 
 function setup() {
   createCanvas(800, 600);
-  GameStart = false
+GameStart = false
 
-unicornImage = loadImage('https://i.imgur.com/RoGsgTC.png');
-fireballImage = loadImage('https://i.imgur.com/37bnkYA.png');
+  unicornImage = loadImage('https://i.imgur.com/hNCQhFo.png');
+fireballsImage = loadImage('https://i.imgur.com/rXCTofE.png');
 
-unicorn = createSprite(width/5, height/2, 40, 40);
-unicorn.addImage(unicornImage);
+   unicorn = createSprite(width/5, height/2, 40, 40);
+  unicorn.addImage(unicornImage);
 
-fireball = new Group();
+   fireballs = new Group();
 
-var gameStart = true;
-gameOver = false;
-updateSprites(false);
-  background("#000000");
-   fill("#00fff6");
+  var gameStart = true;
+  gameOver = false;
+  updateSprites(false);
+   background("#000000");
+    fill("#ffffff");
    textAlign(CENTER);
-   textSize(42);
-   text('Press "c" to play the game!', width/2, height/2);
+   //text size
+   text('Press "c" to play game!', width/3, 20);
 }
 
 function draw() {
-  if (keyWentDown('c')){
-       newGame();
-     GameStart = true
-     }
-     if (!GameStart) {
-      background("#000000");
-      fill("#ffffff");
-      textAlign(CENTER);
-      textSize(42)
-      text('Press "c" to play the game!', width/2, height/2);
-      return;
-     }
 
-  background("#BDF3F1");
-  fill("#000000");
+ if (keyWentDown('c')){
+      newGame();
+    GameStart = true
+    }
+    if (!GameStart) {
+     background("#000000");
+     fill("#ffffff");
+     textAlign(CENTER);
+     text('Press "c" to play game!', width/3, 20);
+     return;
+    }
+
+   background("#003366");
+   fill("#ffffff");
   textAlign(CENTER);
-  textSize(16)
-  text('Controls: w (up) and s (down) keys', width/3, 20);
-  text('fireballs Hit: ' + SCORE, width/10, 20 );
+  //text size
+ text('Controls: w for up, s for down.', width/3, 20);
+ text('fireballs Hit: ' + SCORE, width/10, 20 );
 
   if(gameOver) {
   unicorn.remove();
-  for(var i = 0; i<fireball.length; i++) {
-    fireball[i].remove();
+  for(var i = 0; i<fireballs.length; i++) {
+    fireballs[i].remove();
     }
 
    background("#000000");
-   fill("#00fff6");
+   fill("#ffffff");
    textAlign(CENTER);
-   textSize(42);
-   text('GAME OVER - Press "c" to try again', width/2, height/2 );
-   // more writing
+   // text size
+   text('GAME OVER', width/10, 20 );
+   text('Press "c" to try again', width/3, 20);
    if (keyWentDown('c')){
      newGame();
   }
   }
 
   if(!gameOver) {
-    if (unicorn.position.y < 540 && unicorn.position.y > 80) {
+    if (unicorn.position.y < 590 && unicorn.position.y > 10) {
     if(keyDown('w')) {
       unicorn.position.y -= UP;
     }
@@ -80,30 +80,30 @@ function draw() {
     }
 
   }
-  else if (unicorn.position.y >= 520) {
+  else if (unicorn.position.y >= 560) {
     if(keyDown('w')) {
-      unicorn.position.y = 520;
+      unicorn.position.y = 560;
     }
     else if(keyDown('s')) {
       unicorn.position.y -= UP;
     }
   }
 
-  else if (unicorn.position.y <= 90) {
+  else if (unicorn.position.y <= 40) {
     if(keyDown('w')) {
       unicorn.position.y += DOWN;
     }
     else if(keyDown('s')) {
-      unicorn.position.y = 90;
+      unicorn.position.y = 40;
     }
   }
 
-   if (unicorn.overlap(fireball)) {
+   if (unicorn.overlap(fireballs)) {
       score();
-      for(var i = 0; i<fireball.length; i++) {
-       if(unicorn.overlap(fireball[i])) {
-     fireball[i].position.x = 760;
-      fireball[i].position.y = random(0, 600);
+      for(var i = 0; i<fireballs.length; i++) {
+       if(unicorn.overlap(fireballs[i])) {
+     fireballs[i].position.x = 840;
+      fireballs[i].position.y = random(0, 600);
        }
       }
     }
@@ -113,15 +113,15 @@ function draw() {
 }
   }
 
-   for(var i = 0; i<fireball.length; i++) {
-     if(fireball[i].position.x < -30){
-       fireball[i].position.x = 760;
-      fireball[i].position.y = random(0, 600);
+   for(var i = 0; i<fireballs.length; i++) {
+     if(fireballs[i].position.x < -30){
+       fireballs[i].position.x = 840;
+      fireballs[i].position.y = random(0, 600);
      }
    }
 
  drawSprite(unicorn);
-  fireball.draw();
+  fireballs.draw();
 }
 
 function score() {
@@ -129,7 +129,7 @@ function score() {
 }
 
 function newGame() {
-  fireball.removeSprites();
+  fireballs.removeSprites();
   gameOver = false;
   updateSprites(true);
   unicorn.position.x = width/5;
@@ -141,25 +141,20 @@ function newGame() {
 
     fireball = createSprite(fireballX, fireballH, 75, 75);
 
-  fireball.addImage(fireballImage);
-   fireball.velocity.x = random(-4, -8);
-  fireball.add(fireball);
+  fireball.addImage(fireballsImage);
+   fireball.velocity.x = random(-3, -6);
+  fireballs.add(fireball);
   }
   unicorn = createSprite(width/5, height/2, 40, 40);
   unicorn.addImage(unicornImage);
    drawSprite(unicorn);
 
-  // background("#003366");
-  // fill("#ffffff");
-  // textAlign(CENTER);
-  // text('Controls: W (up) and S (down) Keys', width/3, 20);
-  // text('fireballs Hit: ' + SCORE, width/10, 20 );
 }
 
 function disappear() {
-  for(var i = 0; i<fireball.length; i++) {
-        if(unicorn.overlap(fireball[i])){
-         fireball[i].remove();
+  for(var i = 0; i<fireballs.length; i++) {
+        if(unicorn.overlap(fireballs[i])){
+          fireballs[i].remove();
         }
    }
 }
