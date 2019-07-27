@@ -1,5 +1,5 @@
 var unicorn;
- var fireball;
+var fireball;
 var unicornImage, fireballsImage;
 var SCORE = 0;
 var gameOver;
@@ -61,8 +61,7 @@ function draw() {
    fill("#ffffff");
    textAlign(CENTER);
    textSize(42)
-   text('GAME OVER', width/10, 20 );
-   text('Press "c" to try again', width/3, 20);
+   text('GAME OVER - Press "c" to try again', width/2, height/2);
    if (keyWentDown('c')){
      newGame();
   }
