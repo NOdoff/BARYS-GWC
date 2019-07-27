@@ -37,7 +37,7 @@ function draw() {
   background("#BDF3F1");
   fill("#000000");
   textAlign(CENTER);
-  text('Controls: W (up) and S (down) Keys', width/3, 20);
+  text('Controls: w (up) and s (down) keys', width/3, 20);
   text('fireballs Hit: ' + SCORE, width/10, 20 );
 
   if(gameOver) {
