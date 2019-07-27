@@ -1,5 +1,5 @@
 var unicorn;
-var astroid;
+var fireball;
 var unicornImage, fireballImage;
 var SCORE = 0;
 var gameOver;
