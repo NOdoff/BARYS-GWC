@@ -23,7 +23,7 @@ GameStart = false
   gameOver = false;
   updateSprites(false);
    background("#000000");
-    fill("#ffffff");
+    fill("##00fff6");
    textAlign(CENTER);
    textSize(42);
    text('Click the game and then press "c" to play!', width/2, height/2);
@@ -37,7 +37,7 @@ function draw() {
     }
     if (!GameStart) {
      background("#000000");
-     fill("#ffffff");
+     fill("#00fff6");
      textAlign(CENTER);
      textSize(42);
      text('Click the game and then press "c" to play!', width/2, height/2);
@@ -47,7 +47,7 @@ function draw() {
    background("#003366");
    fill("#ffffff");
   textAlign(CENTER);
-  //text size
+  textSize(16)
  text('Controls: w for up, s for down.', width/3, 20);
  text('fireballs Hit: ' + SCORE, width/10, 20 );
 
@@ -60,7 +60,7 @@ function draw() {
    background("#000000");
    fill("#ffffff");
    textAlign(CENTER);
-   // text size
+   textSize(42)
    text('GAME OVER', width/10, 20 );
    text('Press "c" to try again', width/3, 20);
    if (keyWentDown('c')){
