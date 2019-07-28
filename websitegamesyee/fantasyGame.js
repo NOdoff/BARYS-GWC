@@ -68,7 +68,7 @@ function draw() {
   }
 
   if(!gameOver) {
-    if (unicorn.position.y < 590 && unicorn.position.y > 10) {
+    if (unicorn.position.y < 590 && unicorn.position.y > 60) {
     if(keyDown('w')) {
       unicorn.position.y -= UP;
     }
@@ -89,12 +89,12 @@ function draw() {
     }
   }
 
-  else if (unicorn.position.y <= 40) {
+  else if (unicorn.position.y <= 50) {
     if(keyDown('w')) {
       unicorn.position.y += DOWN;
     }
     else if(keyDown('s')) {
-      unicorn.position.y = 40;
+      unicorn.position.y = 50;
     }
   }
 
