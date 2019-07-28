@@ -13,10 +13,12 @@ function setup() {
 
   unicornImage = loadImage('https://i.imgur.com/quw6xZa.png');
   fireballsImage = loadImage('https://i.imgur.com/rXCTofE.png');
+
   unicorn = createSprite(width/5, height/2, 40, 40);
   unicorn.addImage(unicornImage);
 
   fireballs = new Group();
+
   var gameStart = true;
   gameOver = false;
   updateSprites(false);
@@ -55,7 +57,6 @@ function draw() {
     fireballs[i].remove();
     }
 
-    }
    background("#000000");
    fill("#00fff6");
    textAlign(CENTER);
@@ -67,7 +68,7 @@ function draw() {
   }
 
   if(!gameOver) {
-    if (unicorn.position.y < 590 && unicorn.position.y > 60) {
+    if (unicorn.position.y < 590 && unicorn.position.y > 10) {
     if(keyDown('w')) {
       unicorn.position.y -= UP;
     }
@@ -88,12 +89,12 @@ function draw() {
     }
   }
 
-  else if (unicorn.position.y <= 50) {
+  else if (unicorn.position.y <= 40) {
     if(keyDown('w')) {
       unicorn.position.y += DOWN;
     }
     else if(keyDown('s')) {
-      unicorn.position.y = 50;
+      unicorn.position.y = 40;
     }
   }
 
@@ -137,15 +138,12 @@ function newGame() {
   for (var i = 0; i < 5; i++) {
     let fireballH = random(0, 600);
   let fireballX = random(800, 400);
-for (var i = 0; i < 7; i++) {
-    let fireballH = random();
-  let fireballX = random()
-    fireball = createSprite(fireballX, fireballH, 100, 100);
+
+    fireball = createSprite(fireballX, fireballH, 75, 75);
 
   fireball.addImage(fireballsImage);
    fireball.velocity.x = random(-4, -8);
   fireballs.add(fireball);
-
   }
   unicorn = createSprite(width/5, height/2, 40, 40);
   unicorn.addImage(unicornImage);
