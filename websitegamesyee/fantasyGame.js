@@ -1,7 +1,6 @@
 var unicorn;
 var fireball;
-var cloud;
-var unicornImage, fireballsImage, cloudsImage;
+var unicornImage, fireballsImage;
 var SCORE = 0;
 var gameOver;
 var UP = 15;
@@ -14,14 +13,10 @@ function setup() {
 
   unicornImage = loadImage('https://i.imgur.com/quw6xZa.png');
   fireballsImage = loadImage('https://i.imgur.com/rXCTofE.png');
-  cloudsImage = loadImage('https://i.imgur.com/kZceIbk.png');
-
   unicorn = createSprite(width/5, height/2, 40, 40);
   unicorn.addImage(unicornImage);
 
   fireballs = new Group();
-  clouds = new Group();
-
   var gameStart = true;
   gameOver = false;
   updateSprites(false);
@@ -59,8 +54,7 @@ function draw() {
   for(var i = 0; i<fireballs.length; i++) {
     fireballs[i].remove();
     }
-  for(var i = 0; i<clouds.length; i++) {
-    clouds[i].remove();
+
     }
    background("#000000");
    fill("#00fff6");
@@ -123,13 +117,10 @@ function draw() {
        fireballs[i].position.x = 840;
       fireballs[i].position.y = random(0, 600);
      }
-    clouds[i].position.x = 840;
-      clouds[i].position.y = random();
    }
 
  drawSprite(unicorn);
   fireballs.draw();
-  clouds.draw();
 }
 
 function score() {
@@ -138,7 +129,6 @@ function score() {
 
 function newGame() {
   fireballs.removeSprites();
-  clouds.removeSprites();
   gameOver = false;
   updateSprites(true);
   unicorn.position.x = width/5;
@@ -155,9 +145,7 @@ for (var i = 0; i < 7; i++) {
   fireball.addImage(fireballsImage);
    fireball.velocity.x = random(-4, -8);
   fireballs.add(fireball);
-  cloud.addImage(cloudsImage);
-   cloud.velocity.x = random(-4, -8);
-  clouds.add(cloud);
+
   }
   unicorn = createSprite(width/5, height/2, 40, 40);
   unicorn.addImage(unicornImage);
