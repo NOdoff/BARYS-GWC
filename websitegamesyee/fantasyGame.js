@@ -1,5 +1,5 @@
 var unicorn;
- var fireball;
+var fireball;
 var unicornImage, fireballsImage;
 var SCORE = 0;
 var gameOver;
@@ -9,24 +9,24 @@ var GameStart;
 
 function setup() {
   createCanvas(800, 600);
-GameStart = false
+  GameStart = false
 
   unicornImage = loadImage('https://i.imgur.com/quw6xZa.png');
   fireballsImage = loadImage('https://i.imgur.com/rXCTofE.png');
 
-   unicorn = createSprite(width/5, height/2, 40, 40);
+  unicorn = createSprite(width/5, height/2, 40, 40);
   unicorn.addImage(unicornImage);
 
-   fireballs = new Group();
+  fireballs = new Group();
 
   var gameStart = true;
   gameOver = false;
   updateSprites(false);
-   background("#000000");
-    fill("#00fff6");
-   textAlign(CENTER);
-   textSize(42);
-   text('Click this game and then press "c" to play!', width/2, height/2);
+  background("#000000");
+  fill("#00fff6");
+  textAlign(CENTER);
+  textSize(42);
+  text('Click this game and then press "c" to play!', width/2, height/2);
 }
 
 function draw() {
@@ -142,7 +142,7 @@ function newGame() {
     fireball = createSprite(fireballX, fireballH, 75, 75);
 
   fireball.addImage(fireballsImage);
-   fireball.velocity.x = random(-3, -6);
+   fireball.velocity.x = random(-4, -8);
   fireballs.add(fireball);
   }
   unicorn = createSprite(width/5, height/2, 40, 40);
