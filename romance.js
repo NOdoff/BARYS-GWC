@@ -29,7 +29,7 @@ function setup() {
   background("#000000");
   fill("#ff4ad8");
   textAlign(CENTER);
-  textSize(42);
+  textSize(30);
   text('Click this game and then press "c" to play!', width/2, height/2);
 }
 
@@ -43,7 +43,7 @@ function draw() {
      background("#000000");
      fill("#ff4ad8");
      textAlign(CENTER);
-     textSize(42);
+     textSize(30);
      text('Click this game and then press "c" to play!', width/2, height/2);
      return;
     }
@@ -51,7 +51,7 @@ function draw() {
    background("#BDF3F1");
    fill("#ff4ad8");
   textAlign(CENTER);
-  textSize(16);
+  textSize(15);
  text('Controls: w for up, s for down.', width/4, 20);
  text('Poison Arrows Hit: ' + SCORE, width/2, 20 );
  text('Love Arrows Collected: ' + COLLECT, 3*width/4, 20 );
@@ -68,9 +68,9 @@ function draw() {
    background("#000000");
    fill("#ff4ad8");
    textAlign(CENTER);
-   textSize(42);
+   textSize(30);
    text('GAME OVER - Press "c" to try again', width/2, height/2);
-   textSize(24);
+   textSize(20);
    text('Nice Job! you collected ' + COLLECT + ' Love Arrows!!!', width/2, height/2 + 50);
    if (keyWentDown('c')){
      newGame();
