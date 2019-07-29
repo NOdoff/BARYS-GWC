@@ -203,7 +203,10 @@ h2 {
 }
 
 #sci-fiGameInstructions {
- padding: 50px;
+ padding-top: 50px;
+ padding-bottom: 50px;
+ padding-left: 50px;
+ padding-right: 20px;
  border: 1px solid black;
  background-color: lightgreen;
 }
