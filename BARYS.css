@@ -286,11 +286,11 @@ button:hover:before,button:hover:after{
 }
 
 
-#sci-fiHeading2 {
+/* #sci-fiHeading2 {
  border-style: outset;
  border-width: 5px;
  border-color: #67D066;
-}
+} */
 
 .sectionBar {
  height: 150px;
