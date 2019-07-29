@@ -68,8 +68,10 @@ function draw() {
    background("#000000");
    fill("#ff4ad8");
    textAlign(CENTER);
-   textSize(42)
+   textSize(42);
    text('GAME OVER - Press "c" to try again', width/2, height/2);
+   textSize(24);
+   text('Nice Job! you collected' + COLLECTED + 'Love Arrows!!!')
    if (keyWentDown('c')){
      newGame();
   }
@@ -200,4 +202,3 @@ function disappear() {
         }
   }
 }
-
