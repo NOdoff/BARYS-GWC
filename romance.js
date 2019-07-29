@@ -51,7 +51,7 @@ function draw() {
    background("#BDF3F1");
    fill("#ffffff");
   textAlign(CENTER);
-  textSize(20)
+  textSize(18)
  text('Controls: w for up, s for down.', width/4, 20);
  text('Poison Arrows Hit: ' + SCORE, width/2, 20 );
  text('Love Arrows Collected: ' + COLLECT, 3*width/4, 20 );
