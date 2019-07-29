@@ -49,8 +49,8 @@ astroidsImage = loadImage('https://i.imgur.com/s18v4Ay.png');
    background("#000000");
     fill("#ffffff");
    textAlign(CENTER);
-   
-   text('Press "c" to play game!', width/3, 20);
+   textSize(42);
+   text('Click on the game and then press "c" to play game!', width/2, height/2);
 //   spaceship.remove();
 //   for(var i = 0; i<astroids.length; i++) {
 //     astroids[i].remove();
@@ -93,13 +93,15 @@ function draw() {
      background("#000000");
      fill("#ffffff");
      textAlign(CENTER);
-     text('Press "c" to play game!', width/3, 20);
+     textSize(42);
+     text('Click on the game and then press "c" to play game!', width/2, height/2);
      return;
     }
   
    background("#003366");
    fill("#ffffff");
   textAlign(CENTER);
+ textSize(16);
  text('Controls: w for up, s for down.', width/3, 20);
  text('Asteroids Hit: ' + SCORE, width/10, 20 );
 
@@ -113,8 +115,8 @@ function draw() {
    background("#000000");
    fill("#ffffff");
    textAlign(CENTER);
-   text('GAME OVER', width/10, 20 );
-   text('Press "c" to try again', width/3, 20);
+   textSize(42)
+   text('GAME OVER - Press "c" to try again', width/2, height/2);
    if (keyWentDown('c')){
      newGame();
   }
