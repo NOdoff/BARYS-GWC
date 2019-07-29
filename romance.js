@@ -3,6 +3,7 @@ var poisonArrow;
 var loveArrow;
 var cupidImage, poisonArrowsImage, loveArrowsImage;
 var SCORE = 0;
+var COLLECT = 0
 var gameOver;
 var UP = 15;
 var DOWN = 15;
