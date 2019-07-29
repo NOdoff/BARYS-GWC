@@ -12,7 +12,7 @@ function setup() {
   GameStart = false
 
   cupidImage = loadImage('https://i.imgur.com/Te2bSgo.png');
-  poisonArrowsImage = loadImage('https://i.imgur.com/nh3MBrl.png');
+  poisonArrowsImage = loadImage('https://i.imgur.com/zFCzrFv.png');
 
   cupid = createSprite(width/5, height/2, 40, 40);
   cupid.addImage(cupidImage);
@@ -142,7 +142,7 @@ function newGame() {
     poisonArrow = createSprite(poisonArrowX, poisonArrowH, 75, 75);
 
   poisonArrow.addImage(poisonArrowsImage);
-   poisonArrow.velocity.x = random(-3, -5);
+   poisonArrow.velocity.x = random(-5, -8);
   poisonArrows.add(poisonArrow);
   }
   cupid = createSprite(width/5, height/2, 40, 40);
