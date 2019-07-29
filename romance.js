@@ -1,6 +1,6 @@
 var cupid;
-var fireball;
-var cupidImage, fireballsImage;
+var poisonArrow;
+var cupidImage, poisonArrowsImage;
 var SCORE = 0;
 var gameOver;
 var UP = 15;
@@ -12,18 +12,18 @@ function setup() {
   GameStart = false
 
   cupidImage = loadImage('https://i.imgur.com/Te2bSgo.png');
-  fireballsImage = loadImage('https://i.imgur.com/rXCTofE.png');
+  poisonArrowsImage = loadImage('https://i.imgur.com/nh3MBrl.png');
 
   cupid = createSprite(width/5, height/2, 40, 40);
   cupid.addImage(cupidImage);
 
-  fireballs = new Group();
+  poisonArrows = new Group();
 
   var gameStart = true;
   gameOver = false;
   updateSprites(false);
   background("#000000");
-  fill("#ff4ad8");
+  fill("#00fff6");
   textAlign(CENTER);
   textSize(42);
   text('Click this game and then press "c" to play!', width/2, height/2);
@@ -37,7 +37,7 @@ function draw() {
     }
     if (!GameStart) {
      background("#000000");
-     fill("#ff4ad8");
+     fill("#00fff6");
      textAlign(CENTER);
      textSize(42);
      text('Click this game and then press "c" to play!', width/2, height/2);
@@ -49,16 +49,16 @@ function draw() {
   textAlign(CENTER);
   textSize(16)
  text('Controls: w for up, s for down.', width/3, 20);
- text('fireballs Hit: ' + SCORE, width/10, 20 );
+ text('poisonArrows Hit: ' + SCORE, width/10, 20 );
 
   if(gameOver) {
   cupid.remove();
-  for(var i = 0; i<fireballs.length; i++) {
-    fireballs[i].remove();
+  for(var i = 0; i<poisonArrows.length; i++) {
+    poisonArrows[i].remove();
     }
 
    background("#000000");
-   fill("#ff4ad8");
+   fill("#00fff6");
    textAlign(CENTER);
    textSize(42)
    text('GAME OVER - Press "c" to try again', width/2, height/2);
@@ -98,12 +98,12 @@ function draw() {
     }
   }
 
-   if (cupid.overlap(fireballs)) {
+   if (cupid.overlap(poisonArrows)) {
       score();
-      for(var i = 0; i<fireballs.length; i++) {
-       if(cupid.overlap(fireballs[i])) {
-     fireballs[i].position.x = 840;
-      fireballs[i].position.y = random(0, 600);
+      for(var i = 0; i<poisonArrows.length; i++) {
+       if(cupid.overlap(poisonArrows[i])) {
+     poisonArrows[i].position.x = 840;
+      poisonArrows[i].position.y = random(0, 600);
        }
       }
     }
@@ -113,15 +113,15 @@ function draw() {
 }
   }
 
-   for(var i = 0; i<fireballs.length; i++) {
-     if(fireballs[i].position.x < -30){
-       fireballs[i].position.x = 840;
-      fireballs[i].position.y = random(0, 600);
+   for(var i = 0; i<poisonArrows.length; i++) {
+     if(poisonArrows[i].position.x < -30){
+       poisonArrows[i].position.x = 840;
+      poisonArrows[i].position.y = random(0, 600);
      }
    }
 
  drawSprite(cupid);
-  fireballs.draw();
+  poisonArrows.draw();
 }
 
 function score() {
@@ -129,21 +129,21 @@ function score() {
 }
 
 function newGame() {
-  fireballs.removeSprites();
+  poisonArrows.removeSprites();
   gameOver = false;
   updateSprites(true);
   cupid.position.x = width/5;
   cupid.position.y = height/2;
   SCORE = 0
-  for (var i = 0; i < 5; i++) {
-    let fireballH = random(0, 600);
-  let fireballX = random(800, 400);
+  for (var i = 0; i < 2; i++) {
+    let poisonArrowH = random(0, 600);
+  let poisonArrowX = random(800, 400);
 
-    fireball = createSprite(fireballX, fireballH, 75, 75);
+    poisonArrow = createSprite(poisonArrowX, poisonArrowH, 75, 75);
 
-  fireball.addImage(fireballsImage);
-   fireball.velocity.x = random(-4, -8);
-  fireballs.add(fireball);
+  poisonArrow.addImage(poisonArrowsImage);
+   poisonArrow.velocity.x = random(-3, -5);
+  poisonArrows.add(poisonArrow);
   }
   cupid = createSprite(width/5, height/2, 40, 40);
   cupid.addImage(cupidImage);
@@ -152,9 +152,9 @@ function newGame() {
 }
 
 function disappear() {
-  for(var i = 0; i<fireballs.length; i++) {
-        if(cupid.overlap(fireballs[i])){
-          fireballs[i].remove();
+  for(var i = 0; i<poisonArrows.length; i++) {
+        if(cupid.overlap(poisonArrows[i])){
+          poisonArrows[i].remove();
         }
    }
 }
