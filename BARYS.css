@@ -197,7 +197,7 @@ h2 {
  position: absolute;
  left: 5%;
  top: 11%;
- 
+ display: inline-block;
 }
 
 /*a:link#enterbutton {
