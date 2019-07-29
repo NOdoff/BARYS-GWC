@@ -205,6 +205,11 @@ h2 {
  flex-direction: row;
 }
 
+#fantasyJSGame {
+ display: flex;
+ flex-direction: row;
+}
+
 #sci-fiGameInstructions {
  padding-right: 30px;
  padding-left: 30px;
@@ -212,10 +217,24 @@ h2 {
  padding-top: 0px;
  margin-right: 40px;
  margin-top: 0px;
- background-color: lightgreen;
+ background-color: #6AD86A;
+}
+
+#fantasyGameInstructions {
+ padding-right: 30px;
+ padding-left: 30px;
+ padding-bottom: 30px;
+ padding-top: 0px;
+ margin-right: 40px;
+ margin-top: 0px;
+ background-color: #7449E9;
 }
 
 #sci-fiGameInstructionsBox {
+ margin-top: 50px;
+}
+
+#fantasyGameInstructionsBox {
  margin-top: 50px;
 }
 /*a:link#enterbutton {
