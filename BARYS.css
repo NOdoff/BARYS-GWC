@@ -200,6 +200,20 @@ h2 {
  padding-top: 50px;
 }
 
+#fantasyMiniGame {
+ padding-bottom: 50px;
+ padding-right: 50px;
+ padding-left: 50px;
+ padding-top: 50px;
+}
+
+#romanceMiniGame {
+ padding-bottom: 50px;
+ padding-right: 50px;
+ padding-left: 50px;
+ padding-top: 50px;
+}
+
 #sci-fiJSGame {
  display: flex;
  flex-direction: row;
