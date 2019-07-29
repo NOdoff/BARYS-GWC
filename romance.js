@@ -10,7 +10,7 @@ var DOWN = 15;
 var GameStart;
 
 function setup() {
-  createCanvas(800, 600);
+  createCanvas(700, 600);
   GameStart = false
 
   cupidImage = loadImage('https://i.imgur.com/Te2bSgo.png');
@@ -111,7 +111,7 @@ function draw() {
       score();
       for(var i = 0; i<poisonArrows.length; i++) {
        if(cupid.overlap(poisonArrows[i])) {
-     poisonArrows[i].position.x = 840;
+     poisonArrows[i].position.x = 740;
       poisonArrows[i].position.y = random(0, 600);
        }
       }
@@ -120,7 +120,7 @@ function draw() {
       collect();
       for(var i = 0; i<loveArrows.length; i++) {
         if(cupid.overlap(loveArrows[i])) {
-      loveArrows[i].position.x = 840;
+      loveArrows[i].position.x = 740;
        loveArrows[i].position.y = random(0, 600);
      }
    }
@@ -133,13 +133,13 @@ function draw() {
 
    for(var i = 0; i<poisonArrows.length; i++) {
      if(poisonArrows[i].position.x < -30){
-       poisonArrows[i].position.x = 840;
+       poisonArrows[i].position.x = 740;
       poisonArrows[i].position.y = random(0, 600);
      }
    }
    for(var i = 0; i<loveArrows.length; i++) {
      if(loveArrows[i].position.x < -30){
-       loveArrows[i].position.x = 840;
+       loveArrows[i].position.x = 740;
       loveArrows[i].position.y = random(0, 600);
      }
    }
@@ -168,9 +168,9 @@ function newGame() {
   COLLECT = 0;
   for (var i = 0; i < 2; i++) {
     let poisonArrowH = random(0, 600);
-  let poisonArrowX = random(800, 400);
+  let poisonArrowX = random(700, 400);
   let loveArrowH = random(0, 600);
-  let loveArrowX = random(800, 400);
+  let loveArrowX = random(700, 400);
 
     poisonArrow = createSprite(poisonArrowX, poisonArrowH, 75, 75);
 
