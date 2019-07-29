@@ -10,7 +10,7 @@ var GameStart;
 
 
 function setup() {
-  createCanvas(800, 600);
+  createCanvas(700, 600);
 
 
 GameStart = false
@@ -49,7 +49,7 @@ astroidsImage = loadImage('https://i.imgur.com/s18v4Ay.png');
    background("#000000");
     fill("#ffffff");
    textAlign(CENTER);
-   textSize(36);
+   textSize(30);
    text('Click on the game and then press "c" to play game!', width/2, height/2);
 //   spaceship.remove();
 //   for(var i = 0; i<astroids.length; i++) {
@@ -93,7 +93,7 @@ function draw() {
      background("#000000");
      fill("#ffffff");
      textAlign(CENTER);
-     textSize(36);
+     textSize(30);
      text('Click on the game and then press "c" to play game!', width/2, height/2);
      return;
     }
@@ -115,7 +115,7 @@ function draw() {
    background("#000000");
    fill("#ffffff");
    textAlign(CENTER);
-   textSize(36)
+   textSize(30)
    text('GAME OVER - Press "c" to try again', width/2, height/2);
    if (keyWentDown('c')){
      newGame();
@@ -166,7 +166,7 @@ function draw() {
       score();
       for(var i = 0; i<astroids.length; i++) {
        if(spaceship.overlap(astroids[i])) {
-     astroids[i].position.x = 840;
+     astroids[i].position.x = 740;
       astroids[i].position.y = random(0, 600);
 //    disappear();
        }
@@ -183,7 +183,7 @@ function draw() {
 
    for(var i = 0; i<astroids.length; i++) {
      if(astroids[i].position.x < -30){
-       astroids[i].position.x = 840;
+       astroids[i].position.x = 740;
       astroids[i].position.y = random(0, 600);
 
      }
@@ -252,9 +252,9 @@ function newGame() {
   spaceship.position.x = width/5;
   spaceship.position.y = height/2;
   SCORE = 0
-  for (var i = 0; i < 5; i++) {
+  for (var i = 0; i < 4; i++) {
     let astroidH = random(0, 600);
-  let astroidX = random(800, 400);
+  let astroidX = random(350, 700);
 
     astroid = createSprite(astroidX, astroidH, 75, 75);
 
