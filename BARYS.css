@@ -314,7 +314,7 @@ th {
 }
 
 td {
- border-left: black;
+ border-left: 1px solid black;
 }
 
 tr.even {
