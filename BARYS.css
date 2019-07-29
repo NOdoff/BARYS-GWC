@@ -197,7 +197,7 @@ h2 {
  padding-bottom: 50px;
  padding-right: 50px;
  padding-left: 50px;
- padding-top: 0px;
+ padding-top: 50px;
 }
 
 #sci-fiJSGame {
@@ -213,6 +213,10 @@ h2 {
  margin-right: 40px;
  margin-top: 0px;
  background-color: lightgreen;
+}
+
+#sci-fiGameInstructionsBox {
+ margin-top: 50px;
 }
 /*a:link#enterbutton {
  position: absolute;
