@@ -26,7 +26,7 @@ function setup() {
   gameOver = false;
   updateSprites(false);
   background("#000000");
-  fill("#00fff6");
+  fill("#ff4ad8");
   textAlign(CENTER);
   textSize(42);
   text('Click this game and then press "c" to play!', width/2, height/2);
@@ -40,7 +40,7 @@ function draw() {
     }
     if (!GameStart) {
      background("#000000");
-     fill("#00fff6");
+     fill("#ff4ad8");
      textAlign(CENTER);
      textSize(42);
      text('Click this game and then press "c" to play!', width/2, height/2);
@@ -65,7 +65,7 @@ function draw() {
       loveArrows[i].remove();
       }
    background("#000000");
-   fill("#00fff6");
+   fill("#ff4ad8");
    textAlign(CENTER);
    textSize(42)
    text('GAME OVER - Press "c" to try again', width/2, height/2);
@@ -193,4 +193,3 @@ function disappear() {
         }
   }
 }
-
