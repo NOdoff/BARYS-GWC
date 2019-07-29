@@ -314,4 +314,5 @@ button:hover:before,button:hover:after{
  text-align: center;
  color: white;
  font-size: 23px;
+ margin: 0px;
 }
