@@ -285,22 +285,6 @@ button:hover:before,button:hover:after{
  left: 39%;
 }
 
-#sci-fiHeading {
- background-image: url("Sci-fiBackground.jpg"), linear-gradient(rgba(105, 208, 103, 0.18),rgba(105, 208, 103, 0.18));
- background-blend-mode: overlay;
-}
-
-#subgenreSummaries {
- background-color: green;
-}
-
-#sci-fiTwineGame {
- background-color: darkgreen;
-}
-
-#sci-fiJSGame {
- background-color: lawngreen;
-}
 
 #sci-fiHeading2 {
  border-style: outset;
