@@ -26,7 +26,7 @@ function setup() {
   gameOver = false;
   updateSprites(false);
   background("#000000");
-  fill("#ff4ad8");
+  fill("#00fff6");
   textAlign(CENTER);
   textSize(42);
   text('Click this game and then press "c" to play!', width/2, height/2);
@@ -40,7 +40,7 @@ function draw() {
     }
     if (!GameStart) {
      background("#000000");
-     fill("#ff4ad8");
+     fill("#00fff6");
      textAlign(CENTER);
      textSize(42);
      text('Click this game and then press "c" to play!', width/2, height/2);
@@ -51,8 +51,10 @@ function draw() {
    fill("#ffffff");
   textAlign(CENTER);
   textSize(20)
- text('Controls: w for up, s for down.', width/3, 20);
- text('poisonArrows Hit: ' + SCORE, 2*width/3, 20 );
+ text('Controls: w for up, s for down.', width/4, 20);
+ text('Poison Arrows Hit: ' + SCORE, width/2, 20 );
+ text('Love Arrows Collected: ' + COLLECT, 3*width/4, 20 );
+
 
   if(gameOver) {
   cupid.remove();
@@ -63,7 +65,7 @@ function draw() {
       loveArrows[i].remove();
       }
    background("#000000");
-   fill("#ff4ad8");
+   fill("#00fff6");
    textAlign(CENTER);
    textSize(42)
    text('GAME OVER - Press "c" to try again', width/2, height/2);
@@ -166,7 +168,7 @@ function newGame() {
     loveArrow = createSprite(loveArrowX, loveArrowH, 75, 75);
 
   poisonArrow.addImage(poisonArrowsImage);
-   poisonArrow.velocity.x = random(-3, -5);
+   poisonArrow.velocity.x = random(-5, -8);
   poisonArrows.add(poisonArrow);
 
   loveArrow.addImage(loveArrowsImage);
@@ -191,3 +193,4 @@ function disappear() {
         }
   }
 }
+
