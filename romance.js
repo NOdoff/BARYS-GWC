@@ -49,9 +49,9 @@ function draw() {
     }
 
    background("#BDF3F1");
-   fill("#ffffff");
+   fill("#ff4ad8");
   textAlign(CENTER);
-  textSize(18)
+  textSize(16)
  text('Controls: w for up, s for down.', width/4, 20);
  text('Poison Arrows Hit: ' + SCORE, width/2, 20 );
  text('Love Arrows Collected: ' + COLLECT, 3*width/4, 20 );
