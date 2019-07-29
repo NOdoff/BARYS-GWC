@@ -316,3 +316,7 @@ button:hover:before,button:hover:after{
  font-size: 23px;
  margin: 0px;
 }
+
+td {
+ text-align: center;
+}
