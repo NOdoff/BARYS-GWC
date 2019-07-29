@@ -202,6 +202,9 @@ h2 {
  flex-direction: row;
 }
 
+sci-fiGameInstructions {
+ padding: 10px;
+}
 /*a:link#enterbutton {
  position: absolute;
  top: 100%;
