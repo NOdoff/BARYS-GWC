@@ -194,7 +194,10 @@ h2 {
 }
 
 #sci-fiMiniGame {
- padding: 50px;
+ padding-bottom: 50px;
+ padding-right: 50px;
+ padding-left: 50px;
+ padding-top: 0px;
 }
 
 #sci-fiJSGame {
