@@ -326,8 +326,8 @@ table {
 }
 
 .footer {
-  position: fixed;
-  left: 0;
+  position: absolute;
+  height: 2.5rem;
   bottom: 0;
   width: 100%;
   background-color: white;
