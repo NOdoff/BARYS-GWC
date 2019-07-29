@@ -313,6 +313,9 @@ th {
  border-top: 1px solid #999;
 }
 
+td {
+ border-left: 1px solid black;
+}
 
 tr.even {
  background-color: #efefef;
@@ -326,12 +329,21 @@ table {
  border: 1px solid black;
 }
 
-.footer {
-  position: fixed;
-  left: 0;
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 5rem;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: white;
-  color: black;
-  text-align: center;
+  height: 5rem;    /* Footer height */
+ background-color: white;
+ color: black;
+ text-align: center;
 }
