@@ -49,7 +49,7 @@ astroidsImage = loadImage('https://i.imgur.com/s18v4Ay.png');
    background("#000000");
     fill("#ffffff");
    textAlign(CENTER);
-   textSize(42);
+   textSize(36);
    text('Click on the game and then press "c" to play game!', width/2, height/2);
 //   spaceship.remove();
 //   for(var i = 0; i<astroids.length; i++) {
@@ -93,7 +93,7 @@ function draw() {
      background("#000000");
      fill("#ffffff");
      textAlign(CENTER);
-     textSize(42);
+     textSize(36);
      text('Click on the game and then press "c" to play game!', width/2, height/2);
      return;
     }
@@ -115,7 +115,7 @@ function draw() {
    background("#000000");
    fill("#ffffff");
    textAlign(CENTER);
-   textSize(42)
+   textSize(36)
    text('GAME OVER - Press "c" to try again', width/2, height/2);
    if (keyWentDown('c')){
      newGame();
