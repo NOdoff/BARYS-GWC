@@ -313,6 +313,10 @@ th {
  border-top: 1px solid #999;
 }
 
+td {
+ border-left: black;
+}
+
 tr.even {
  background-color: #efefef;
 }
