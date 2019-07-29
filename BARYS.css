@@ -307,3 +307,8 @@ button:hover:before,button:hover:after{
  border-width: 5px;
  border-color: #67D066;
 }
+
+.sectionBar {
+ height: 150px;
+ background-color: black;
+}
