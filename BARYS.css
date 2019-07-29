@@ -210,6 +210,11 @@ h2 {
  flex-direction: row;
 }
 
+#romanceJSGame {
+ display: flex;
+ flex-direction: row;
+}
+
 #sci-fiGameInstructions {
  padding-right: 30px;
  padding-left: 30px;
@@ -230,11 +235,27 @@ h2 {
  background-color: #7449E9;
 }
 
+
+#romanceGameInstructions {
+ padding-right: 30px;
+ padding-left: 30px;
+ padding-bottom: 30px;
+ padding-top: 0px;
+ margin-right: 40px;
+ margin-top: 0px;
+ background-color: #FDBAF1;
+}
+
+
 #sci-fiGameInstructionsBox {
  margin-top: 50px;
 }
 
 #fantasyGameInstructionsBox {
+ margin-top: 50px;
+}
+
+#romanceGameInstructionsBox {
  margin-top: 50px;
 }
 /*a:link#enterbutton {
