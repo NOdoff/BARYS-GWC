@@ -59,7 +59,9 @@ function draw() {
   for(var i = 0; i<poisonArrows.length; i++) {
     poisonArrows[i].remove();
     }
-
+  for(var i = 0; i<loveArrows.length; i++) {
+      loveArrows[i].remove();
+      }
    background("#000000");
    fill("#00fff6");
    textAlign(CENTER);
@@ -81,7 +83,6 @@ function draw() {
     else {
       cupid.position.y += 0;
     }
-
   }
   else if (cupid.position.y >= 560) {
     if(keyDown('w')) {
@@ -111,7 +112,6 @@ function draw() {
       }
     }
     if (cupid.overlap(loveArrows)) {
-       collected();
        for(var i = 0; i<loveArrows.length; i++) {
         if(cupid.overlap(loveArrows[i])) {
       loveArrows[i].position.x = 840;
@@ -188,4 +188,6 @@ function disappear() {
    for(var i = 0; i<loveArrows.length; i++) {
          if(cupid.overlap(loveArrows[i])){
            loveArrows[i].remove();
+        }
+  }
 }
