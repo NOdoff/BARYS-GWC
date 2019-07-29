@@ -115,7 +115,8 @@ function draw() {
       }
     }
     if (cupid.overlap(loveArrows)) {
-       for(var i = 0; i<loveArrows.length; i++) {
+      collect();
+      for(var i = 0; i<loveArrows.length; i++) {
         if(cupid.overlap(loveArrows[i])) {
       loveArrows[i].position.x = 840;
        loveArrows[i].position.y = random(0, 600);
@@ -150,6 +151,10 @@ function score() {
   SCORE = SCORE + 1;
 }
 
+function collect() {
+  COLLECT = COLLECT + 1;
+}
+
 function newGame() {
   poisonArrows.removeSprites();
   loveArrows.removeSprites();
@@ -157,7 +162,8 @@ function newGame() {
   updateSprites(true);
   cupid.position.x = width/5;
   cupid.position.y = height/2;
-  SCORE = 0
+  SCORE = 0;
+  COLLECT = 0;
   for (var i = 0; i < 2; i++) {
     let poisonArrowH = random(0, 600);
   let poisonArrowX = random(800, 400);
@@ -194,3 +200,4 @@ function disappear() {
         }
   }
 }
+
