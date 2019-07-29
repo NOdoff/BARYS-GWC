@@ -1,6 +1,7 @@
 var cupid;
 var poisonArrow;
-var cupidImage, poisonArrowsImage;
+var loveArrow;
+var cupidImage, poisonArrowsImage, loveArrowsImage;
 var SCORE = 0;
 var gameOver;
 var UP = 15;
@@ -12,12 +13,14 @@ function setup() {
   GameStart = false
 
   cupidImage = loadImage('https://i.imgur.com/Te2bSgo.png');
-  poisonArrowsImage = loadImage('https://i.imgur.com/zFCzrFv.png');
+  poisonArrowsImage = loadImage('https://i.imgur.com/nh3MBrl.png');
+  loveArrowsImage = loadImage ('https://i.imgur.com/pikq0mj.png')
 
   cupid = createSprite(width/5, height/2, 40, 40);
   cupid.addImage(cupidImage);
 
   poisonArrows = new Group();
+  loveArrows = new Group();
 
   var gameStart = true;
   gameOver = false;
@@ -47,7 +50,7 @@ function draw() {
    background("#BDF3F1");
    fill("#ffffff");
   textAlign(CENTER);
-  textSize(16)
+  textSize(20)
  text('Controls: w for up, s for down.', width/3, 20);
  text('poisonArrows Hit: ' + SCORE, width/10, 20 );
 
@@ -107,6 +110,15 @@ function draw() {
        }
       }
     }
+    if (cupid.overlap(loveArrows)) {
+       collected();
+       for(var i = 0; i<loveArrows.length; i++) {
+        if(cupid.overlap(loveArrows[i])) {
+      loveArrows[i].position.x = 840;
+       loveArrows[i].position.y = random(0, 600);
+     }
+   }
+ }
 
    if (SCORE == 5) {
  gameOver = true ;
@@ -119,9 +131,16 @@ function draw() {
       poisonArrows[i].position.y = random(0, 600);
      }
    }
+   for(var i = 0; i<loveArrows.length; i++) {
+     if(loveArrows[i].position.x < -30){
+       loveArrows[i].position.x = 840;
+      loveArrows[i].position.y = random(0, 600);
+     }
+   }
 
  drawSprite(cupid);
   poisonArrows.draw();
+  loveArrows.draw();
 }
 
 function score() {
@@ -130,6 +149,7 @@ function score() {
 
 function newGame() {
   poisonArrows.removeSprites();
+  loveArrows.removeSprites();
   gameOver = false;
   updateSprites(true);
   cupid.position.x = width/5;
@@ -138,12 +158,20 @@ function newGame() {
   for (var i = 0; i < 2; i++) {
     let poisonArrowH = random(0, 600);
   let poisonArrowX = random(800, 400);
+  let loveArrowH = random(0, 600);
+  let loveArrowX = random(800, 400);
 
     poisonArrow = createSprite(poisonArrowX, poisonArrowH, 75, 75);
 
+    loveArrow = createSprite(loveArrowX, loveArrowH, 75, 75);
+
   poisonArrow.addImage(poisonArrowsImage);
-   poisonArrow.velocity.x = random(-5, -8);
+   poisonArrow.velocity.x = random(-3, -5);
   poisonArrows.add(poisonArrow);
+
+  loveArrow.addImage(loveArrowsImage);
+   loveArrow.velocity.x = random(-3, -5);
+  loveArrows.add(loveArrow);
   }
   cupid = createSprite(width/5, height/2, 40, 40);
   cupid.addImage(cupidImage);
@@ -157,4 +185,7 @@ function disappear() {
           poisonArrows[i].remove();
         }
    }
+   for(var i = 0; i<loveArrows.length; i++) {
+         if(cupid.overlap(loveArrows[i])){
+           loveArrows[i].remove();
 }
