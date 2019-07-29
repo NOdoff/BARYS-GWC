@@ -325,12 +325,9 @@ tr:hover {
  background-color: #c3e6e5;
 }
 
-table {
- border: 1px solid black;
-}
-
 table { 
- border: none; border-collapse: collapse; 
+ border: 1px solid black; 
+ border-collapse: collapse; 
 }
 
 table td { 
