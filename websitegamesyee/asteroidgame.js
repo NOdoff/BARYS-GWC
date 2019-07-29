@@ -102,7 +102,7 @@ function draw() {
    fill("#ffffff");
   textAlign(CENTER);
  textSize(16);
- text('Controls: w for up, s for down.', width/3, 20);
+ text('Controls: w for up, s for down.', width/2, 20);
  text('Asteroids Hit: ' + SCORE, width/10, 20 );
 
 
