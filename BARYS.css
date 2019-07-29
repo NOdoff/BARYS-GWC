@@ -197,11 +197,12 @@ h2 {
  position: absolute;
  left: 5%;
  top: 11%;
+ float:left;
 }
 
-#sci-fiGameInstructions {
+/* #sci-fiGameInstructions {
  float: right;
-}
+} */
 
 /*a:link#enterbutton {
  position: absolute;
