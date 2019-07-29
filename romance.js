@@ -71,7 +71,7 @@ function draw() {
    textSize(42);
    text('GAME OVER - Press "c" to try again', width/2, height/2);
    textSize(24);
-   text('Nice Job! you collected' + COLLECT + 'Love Arrows!!!', width/2, height/2 - 50);
+   text('Nice Job! you collected ' + COLLECT + ' Love Arrows!!!', width/2, height/2 + 50);
    if (keyWentDown('c')){
      newGame();
   }
