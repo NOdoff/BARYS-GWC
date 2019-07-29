@@ -1,6 +1,6 @@
-var unicorn;
+var cupid;
 var fireball;
-var unicornImage, fireballsImage;
+var cupidImage, fireballsImage;
 var SCORE = 0;
 var gameOver;
 var UP = 15;
@@ -11,11 +11,11 @@ function setup() {
   createCanvas(800, 600);
   GameStart = false
 
-  unicornImage = loadImage('https://i.imgur.com/quw6xZa.png');
+  cupidImage = loadImage('https://i.imgur.com/Te2bSgo.png');
   fireballsImage = loadImage('https://i.imgur.com/rXCTofE.png');
 
-  unicorn = createSprite(width/5, height/2, 40, 40);
-  unicorn.addImage(unicornImage);
+  cupid = createSprite(width/5, height/2, 40, 40);
+  cupid.addImage(cupidImage);
 
   fireballs = new Group();
 
@@ -52,7 +52,7 @@ function draw() {
  text('fireballs Hit: ' + SCORE, width/10, 20 );
 
   if(gameOver) {
-  unicorn.remove();
+  cupid.remove();
   for(var i = 0; i<fireballs.length; i++) {
     fireballs[i].remove();
     }
@@ -68,40 +68,40 @@ function draw() {
   }
 
   if(!gameOver) {
-    if (unicorn.position.y < 590 && unicorn.position.y > 10) {
+    if (cupid.position.y < 590 && cupid.position.y > 10) {
     if(keyDown('w')) {
-      unicorn.position.y -= UP;
+      cupid.position.y -= UP;
     }
     else if(keyDown('s')) {
-      unicorn.position.y += DOWN;
+      cupid.position.y += DOWN;
     }
     else {
-      unicorn.position.y += 0;
+      cupid.position.y += 0;
     }
 
   }
-  else if (unicorn.position.y >= 560) {
+  else if (cupid.position.y >= 560) {
     if(keyDown('w')) {
-      unicorn.position.y = 560;
+      cupid.position.y = 560;
     }
     else if(keyDown('s')) {
-      unicorn.position.y -= UP;
+      cupid.position.y -= UP;
     }
   }
 
-  else if (unicorn.position.y <= 40) {
+  else if (cupid.position.y <= 40) {
     if(keyDown('w')) {
-      unicorn.position.y += DOWN;
+      cupid.position.y += DOWN;
     }
     else if(keyDown('s')) {
-      unicorn.position.y = 40;
+      cupid.position.y = 40;
     }
   }
 
-   if (unicorn.overlap(fireballs)) {
+   if (cupid.overlap(fireballs)) {
       score();
       for(var i = 0; i<fireballs.length; i++) {
-       if(unicorn.overlap(fireballs[i])) {
+       if(cupid.overlap(fireballs[i])) {
      fireballs[i].position.x = 840;
       fireballs[i].position.y = random(0, 600);
        }
@@ -120,7 +120,7 @@ function draw() {
      }
    }
 
- drawSprite(unicorn);
+ drawSprite(cupid);
   fireballs.draw();
 }
 
@@ -132,8 +132,8 @@ function newGame() {
   fireballs.removeSprites();
   gameOver = false;
   updateSprites(true);
-  unicorn.position.x = width/5;
-  unicorn.position.y = height/2;
+  cupid.position.x = width/5;
+  cupid.position.y = height/2;
   SCORE = 0
   for (var i = 0; i < 5; i++) {
     let fireballH = random(0, 600);
@@ -145,15 +145,15 @@ function newGame() {
    fireball.velocity.x = random(-4, -8);
   fireballs.add(fireball);
   }
-  unicorn = createSprite(width/5, height/2, 40, 40);
-  unicorn.addImage(unicornImage);
-   drawSprite(unicorn);
+  cupid = createSprite(width/5, height/2, 40, 40);
+  cupid.addImage(cupidImage);
+   drawSprite(cupid);
 
 }
 
 function disappear() {
   for(var i = 0; i<fireballs.length; i++) {
-        if(unicorn.overlap(fireballs[i])){
+        if(cupid.overlap(fireballs[i])){
           fireballs[i].remove();
         }
    }
