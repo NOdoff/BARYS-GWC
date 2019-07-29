@@ -202,7 +202,7 @@ h2 {
  flex-direction: row;
 }
 
-sci-fiGameInstructions {
+#sci-fiGameInstructions {
  padding: 50px;
 }
 /*a:link#enterbutton {
