@@ -317,7 +317,7 @@ tr.even {
  background-color: #efefef;
 }
 
-tr.hover {
+tr:hover {
  background-color: #c3e6e5;
 }
 
@@ -326,8 +326,8 @@ table {
 }
 
 .footer {
-  position: absolute;
-  height: 2.5rem;
+  position: fixed;
+  left: 0;
   bottom: 0;
   width: 100%;
   background-color: white;
