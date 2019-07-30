@@ -51,7 +51,7 @@ astroidsImage = loadImage('https://i.imgur.com/s18v4Ay.png');
    textAlign(CENTER);
    textSize(30);
    text('Click on the game and then press "c" to play game!', width/2, height/2);
-   text('Controls: W for up, S for down', width/4, height/4);
+   text('Controls: W for up, S for down', width/2, height/4);
 //   spaceship.remove();
 //   for(var i = 0; i<astroids.length; i++) {
 //     astroids[i].remove();
@@ -96,7 +96,7 @@ function draw() {
      textAlign(CENTER);
      textSize(30);
      text('Click on the game and then press "c" to play game!', width/2, height/2);
-      text('Controls: W for up, S for down', width/4, height/4);
+      text('Controls: W for up, S for down', width/2, height/4);
      return;
     }
   
