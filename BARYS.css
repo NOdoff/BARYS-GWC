@@ -70,7 +70,10 @@ a#aboutUsCredits {
  text-decoration: underline;
 }
  
- 
+ a {
+  color:black;
+  text-decoration: underline;
+}
  /*.banner {
   
   padding-top: 5px;
