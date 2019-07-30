@@ -243,7 +243,6 @@ h2 {
 .Contact {
  display: flex;
  flex-direction: column;
- width: 50%
 }
 
 .ContactContainer {
@@ -453,4 +452,8 @@ margin-left:50px;
 
 #creditLinks {
  text-align: center;
+}
+
+#sci-fiTwineGame {
+ background-image: url("twineBackgroundF.png");
 }
