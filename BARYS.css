@@ -477,4 +477,14 @@ margin-left:50px;
  background-image: url("bookwallpaper.jpg");
   background-size: cover;
 }
+
+#linkedIn1 {
+  position:absolute;
+  left: 30%
+}
+
+#linkedIn2 {
+  position: absolute;
+  left: 60%
+}
  
