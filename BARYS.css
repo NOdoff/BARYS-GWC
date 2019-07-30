@@ -64,6 +64,12 @@
 .aboutUsContent {
   color: black;
 }
+
+a.sci-fiSectionContent {
+ color: blue;
+ text-decoration: underline;
+}
+ 
  
  /*.banner {
   
@@ -438,7 +444,7 @@ table td {
 
 margin-left:50px;
  
-/* #sci-fiTwineInstructions {
+/*  #sci-fiTwineInstructions {
  padding-right: 30px;
  padding-left: 30px;
  padding-bottom: 7px;
@@ -455,4 +461,5 @@ margin-left:50px;
  padding-left: 50px;
  padding-top: 50px;
 } */
+ 
 }
