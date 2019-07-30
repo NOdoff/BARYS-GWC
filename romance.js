@@ -31,6 +31,7 @@ function setup() {
   textAlign(CENTER);
   textSize(30);
   text('Click this game and then press "c" to play!', width/2, height/2);
+  text('Controls: w for up, s for down', width/4, height/4);
 }
 
 function draw() {
