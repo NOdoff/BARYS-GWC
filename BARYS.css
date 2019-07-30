@@ -237,6 +237,7 @@ h2 {
  margin-right: 40px;
  margin-top: 0px;
  background-color: #6AD86A;
+ width: 300px;
 }
 
 #fantasyGameInstructions {
@@ -264,7 +265,6 @@ h2 {
 #sci-fiGameInstructionsBox {
  margin-top: 50px;
  font-size: 20px;
- width: 350px;
 }
 
 #fantasyGameInstructionsBox {
