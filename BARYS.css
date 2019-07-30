@@ -65,6 +65,10 @@
   color: black;
 }
 
+.aboutUsCredits > a {
+ color: blue;
+ text-decoration: underline;
+}
  
  a {
   color:black;
@@ -297,9 +301,9 @@ button{
   color:#fff;
   border:none;
   position:relative;
-  height:60px;
+  height:40px;
   font-size:1.6em;
-  padding:0 2em;
+  padding:2em;
   cursor:pointer;
   transition:800ms ease all;
   outline:none;
