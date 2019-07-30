@@ -172,11 +172,6 @@ html {
      -webkit-transition-timing-function: ease;
 }
 
-a {
- text-decoration: none;
- color: black;
-}
-
 .indexTextMargin {
  margin-top: 0px;
 }
