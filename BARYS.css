@@ -238,6 +238,13 @@ h2 {
  flex-direction: row;
 }
 
+
+#Contact {
+ display: flex;
+ flex-direction: row;
+}
+
+
 #sci-fiGameInstructions {
  padding-right: 30px;
  padding-left: 30px;
