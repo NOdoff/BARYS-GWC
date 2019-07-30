@@ -242,7 +242,13 @@ h2 {
 
 .Contact {
  display: flex;
+ flex-direction: column;
+}
+
+.ContactContainer {
+ display: flex;
  flex-direction: row;
+ flex-wrap: wrap;
 }
 
 .ContactRight {
