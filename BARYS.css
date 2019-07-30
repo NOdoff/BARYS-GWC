@@ -61,10 +61,7 @@
  text-align: center;
 }
 
-.sci-fiSectionContent > a {
- color: blue;
- text-decoration: underline;
-}
+
 
 .aboutUsContent {
   color: black;
@@ -435,4 +432,9 @@ margin-left:50px;
  padding-top: 50px;
 } */
  
+}
+
+.sci-fiSectionContent > a {
+ color: blue;
+ text-decoration: underline;
 }
