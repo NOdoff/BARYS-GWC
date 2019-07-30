@@ -196,6 +196,10 @@ h2 {
  text-align: center;
 }
 
+h1 {
+ font-family: 'Playfair Display', serif;
+}
+
 #my_iframe {
  position: absolute;
  left: 22%;
@@ -251,7 +255,7 @@ h2 {
  padding-top: 0px;
  margin-right: 40px;
  margin-top: 0px;
- margin-left: 70%;
+ margin-left: 300px;
  font-size: 20px;
 }
 
