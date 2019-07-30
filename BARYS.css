@@ -61,6 +61,11 @@
  text-align: center;
 }
 
+.sci-fiSectionContent > a {
+ color: blue;
+ text-decoration: underline;
+}
+
 .aboutUsContent {
   color: black;
 }
