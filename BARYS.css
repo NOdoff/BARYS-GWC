@@ -263,14 +263,17 @@ h2 {
 
 #sci-fiGameInstructionsBox {
  margin-top: 50px;
+ font-size: 20px;
 }
 
 #fantasyGameInstructionsBox {
  margin-top: 50px;
+ font-size: 20px;
 }
 
 #romanceGameInstructionsBox {
  margin-top: 50px;
+ font-size: 20px;
 }
 /*a:link#enterbutton {
  position: absolute;
