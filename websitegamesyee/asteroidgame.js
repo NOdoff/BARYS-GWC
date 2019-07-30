@@ -96,6 +96,7 @@ function draw() {
      textAlign(CENTER);
      textSize(30);
      text('Click on the game and then press "c" to play game!', width/2, height/2);
+      text('Controls: W for up, S for down', width/4, height/4);
      return;
     }
   
