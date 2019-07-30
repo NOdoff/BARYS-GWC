@@ -466,3 +466,7 @@ margin-left:50px;
 .sub-genreHeading {
  color: white;
 }
+
+#sci-fiHeading {
+ background-image: url("headingBackgroundS.png")
+}
