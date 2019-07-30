@@ -65,7 +65,7 @@
   color: black;
 }
 
-#aboutUsCredits a {
+a#aboutUsCredits {
  color: blue;
  text-decoration: underline;
 }
