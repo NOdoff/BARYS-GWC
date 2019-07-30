@@ -405,10 +405,6 @@ tr.even {
  background-color: #efefef;
 }
 
-tr:hover {
- background-color: #c3e6e5;
-}
-
 table { 
  border: 1px solid black; 
  border-collapse: collapse; 
