@@ -60,6 +60,10 @@
 .sci-fiSectionContent > h1 {
  text-align: center;
 }
+
+.aboutUsContent {
+  font-color: black;
+}
  
  /*.banner {
   
