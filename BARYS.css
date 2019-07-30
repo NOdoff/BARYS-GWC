@@ -308,7 +308,7 @@ button{
   position:relative;
   height:40px;
   font-size:1.6em;
-  padding:2em;
+  padding:0.2em;
   cursor:pointer;
   transition:800ms ease all;
   outline:none;
